@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BackEnd;
+using Functions;
+using Microsoft.EntityFrameworkCore;
 
 namespace ScaryMovieForms
 {
@@ -15,7 +17,8 @@ namespace ScaryMovieForms
         [STAThread]
         static void Main()
         {
-             Application.SetHighDpiMode(HighDpiMode.SystemAware);
+ 
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainMenuForm());

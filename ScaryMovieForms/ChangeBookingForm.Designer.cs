@@ -65,6 +65,8 @@ namespace ScaryMovieForms
             this.rdoShow2 = new System.Windows.Forms.RadioButton();
             this.rdoShow1 = new System.Windows.Forms.RadioButton();
             this.btnSaveChangesSeats = new System.Windows.Forms.Button();
+            this.btnSaveOnlyTickets = new System.Windows.Forms.Button();
+            this.btnGoBackMenu = new System.Windows.Forms.Button();
             this.tlpVisualizeSeats.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,6 +161,7 @@ namespace ScaryMovieForms
             this.cklListTickets.Size = new System.Drawing.Size(125, 378);
             this.cklListTickets.TabIndex = 9;
             this.cklListTickets.Visible = false;
+            this.cklListTickets.SelectedIndexChanged += new System.EventHandler(this.cklListTickets_SelectedIndexChanged);
             // 
             // tlpVisualizeSeats
             // 
@@ -491,19 +494,43 @@ namespace ScaryMovieForms
             // 
             // btnSaveChangesSeats
             // 
-            this.btnSaveChangesSeats.Location = new System.Drawing.Point(532, 396);
+            this.btnSaveChangesSeats.Location = new System.Drawing.Point(507, 400);
             this.btnSaveChangesSeats.Name = "btnSaveChangesSeats";
-            this.btnSaveChangesSeats.Size = new System.Drawing.Size(94, 29);
+            this.btnSaveChangesSeats.Size = new System.Drawing.Size(124, 29);
             this.btnSaveChangesSeats.TabIndex = 15;
             this.btnSaveChangesSeats.Text = "Save changes";
             this.btnSaveChangesSeats.UseVisualStyleBackColor = true;
+            this.btnSaveChangesSeats.Visible = false;
             this.btnSaveChangesSeats.Click += new System.EventHandler(this.btnSaveChangesSeats_Click);
+            // 
+            // btnSaveOnlyTickets
+            // 
+            this.btnSaveOnlyTickets.Location = new System.Drawing.Point(505, 400);
+            this.btnSaveOnlyTickets.Name = "btnSaveOnlyTickets";
+            this.btnSaveOnlyTickets.Size = new System.Drawing.Size(126, 29);
+            this.btnSaveOnlyTickets.TabIndex = 16;
+            this.btnSaveOnlyTickets.Text = "Save changes";
+            this.btnSaveOnlyTickets.UseVisualStyleBackColor = true;
+            this.btnSaveOnlyTickets.Visible = false;
+            this.btnSaveOnlyTickets.Click += new System.EventHandler(this.btnSaveOnlyTickets_Click);
+            // 
+            // btnGoBackMenu
+            // 
+            this.btnGoBackMenu.Location = new System.Drawing.Point(178, 400);
+            this.btnGoBackMenu.Name = "btnGoBackMenu";
+            this.btnGoBackMenu.Size = new System.Drawing.Size(174, 29);
+            this.btnGoBackMenu.TabIndex = 17;
+            this.btnGoBackMenu.Text = "Go back to main menu";
+            this.btnGoBackMenu.UseVisualStyleBackColor = true;
+            this.btnGoBackMenu.Click += new System.EventHandler(this.btnGoBackMenu_Click);
             // 
             // ChangeBookingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGoBackMenu);
+            this.Controls.Add(this.btnSaveOnlyTickets);
             this.Controls.Add(this.btnSaveChangesSeats);
             this.Controls.Add(this.rdoShow4);
             this.Controls.Add(this.rdoShow3);
@@ -568,5 +595,7 @@ namespace ScaryMovieForms
         private System.Windows.Forms.RadioButton rdoShow2;
         private System.Windows.Forms.RadioButton rdoShow1;
         private System.Windows.Forms.Button btnSaveChangesSeats;
+        private System.Windows.Forms.Button btnSaveOnlyTickets;
+        private System.Windows.Forms.Button btnGoBackMenu;
     }
 }

@@ -25,6 +25,7 @@ namespace ScaryMovieForms
         private void rdoShow1_CheckedChanged(object sender, EventArgs e)
         {
            int choice = MainMenuForm.MovieChoice;
+            cklListTickets.Items.Clear();
 
             showTime = 1;
 
@@ -74,6 +75,8 @@ namespace ScaryMovieForms
 
             int choice = MainMenuForm.MovieChoice;
 
+            cklListTickets.Items.Clear();
+
             showTime = 2;
 
             tlpVisualizeSeats.Visible = true;
@@ -92,6 +95,7 @@ namespace ScaryMovieForms
         private void rdoShow3_CheckedChanged(object sender, EventArgs e)
         {
             int choice = MainMenuForm.MovieChoice;
+            cklListTickets.Items.Clear();
 
             showTime = 3;
 
@@ -111,6 +115,7 @@ namespace ScaryMovieForms
         private void rdoShow4_CheckedChanged(object sender, EventArgs e)
         {
             int choice = MainMenuForm.MovieChoice;
+            cklListTickets.Items.Clear();
 
             showTime = 4;
 

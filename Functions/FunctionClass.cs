@@ -58,7 +58,18 @@ namespace Functions
             return movieTitle;
 
         }
+        public string MovieTitleFromBookingId(int bookingId)
+        {
+            using (var movieContext = new MovieAppContext())
+            {
+                var movieId = movieContext.Tickets.First(ticket => ticket.BookingId == bookingId).RoomId;
 
+                var title = movieContext.Movies.First(movie => movie.Id == movieId).Title;
+
+                return title;
+
+            }
+        }
         public string GetShowTime(int showNumber)
         {
             string showTime = "";
@@ -162,9 +173,136 @@ namespace Functions
             }
         }
 
-        public void ChangeTicketsOnBooking()
+        public void ChangeTicketsOnBooking( int roomId, List<int> oldSeats, int oldShowTime, List<int> newSeats, int newShowTime)
         {
 
+            List<int> oldticketsId = new List<int>();
+            List<int> newticketsId = new List<int>();
+            List<int> bookingId = new List<int>();
+
+            using (var movieContext = new MovieAppContext())
+            {
+                foreach (var oldSeatNumber in oldSeats)
+                {
+                    var oldTicketsList = movieContext.Tickets.Where(ticket => ticket.RoomId == roomId)
+                        .Where(ticket => ticket.ShowTimeId == oldShowTime)
+                        .Where(ticket => ticket.SeatNumber == oldSeatNumber).ToList();
+                    
+                    foreach (var ticket in oldTicketsList)
+                    {
+                        oldticketsId.Add(ticket.Id);
+                    }
+                }
+
+                foreach (var ticketId in oldticketsId)
+                {
+                    var listOfTickets = movieContext.Tickets.Where(ticket => ticket.Id == ticketId);
+
+                    var listbookingId = listOfTickets.Select(ticket => ticket.BookingId).ToList();
+                    foreach (var ticket in listOfTickets)
+                    {
+                        ticket.BookingId = null;
+                     }
+                    foreach (var booking in listbookingId)
+                    {
+                        bookingId.Add((int)booking);
+                    }
+                }
+                var takebookingId = bookingId.First();
+
+                movieContext.SaveChanges();
+
+                foreach (var newSeatNumber in newSeats)
+                {
+                    var newTicketsList = movieContext.Tickets.Where(ticket => ticket.RoomId == roomId)
+                        .Where(ticket => ticket.ShowTimeId == newShowTime)
+                        .Where(ticket => ticket.SeatNumber == newSeatNumber).ToList();
+
+                    foreach (var ticket in newTicketsList)
+                    {
+                        newticketsId.Add(ticket.Id);
+                    }
+                }
+
+                foreach (var ticketId in newticketsId)
+                {
+                    var listOfTickets = movieContext.Tickets.Where(ticket => ticket.Id == ticketId).ToList();
+
+                    foreach (var ticket in listOfTickets)
+                    {
+                        ticket.BookingId = takebookingId;
+                    }
+                }
+
+                movieContext.SaveChanges();
+
+            }
+            
+        }
+        public void ChangeOnlySeatsOnBooking(int roomId, List<int> oldSeats, int oldShowTimeId, List<int> newSeats)
+        {
+
+            List<int> oldticketsId = new List<int>();
+            List<int> newticketsId = new List<int>();
+            List<int> bookingId = new List<int>();
+
+            using (var movieContext = new MovieAppContext())
+            {
+                foreach (var oldSeatNumber in oldSeats)
+                {
+                    var oldTicketsList = movieContext.Tickets.Where(ticket => ticket.RoomId == roomId)
+                        .Where(ticket => ticket.ShowTimeId == oldShowTimeId)
+                        .Where(ticket => ticket.SeatNumber == oldSeatNumber).ToList();
+
+                    foreach (var ticket in oldTicketsList)
+                    {
+                        oldticketsId.Add(ticket.Id);
+                    }
+                }
+
+                foreach (var ticketId in oldticketsId)
+                {
+                    var listOfTickets = movieContext.Tickets.Where(ticket => ticket.Id == ticketId);
+
+                    var listbookingId = listOfTickets.Select(ticket => ticket.BookingId).ToList();
+                    foreach (var ticket in listOfTickets)
+                    {
+                        ticket.BookingId = null;
+                    }
+                    foreach (var booking in listbookingId)
+                    {
+                        bookingId.Add((int)booking);
+                    }
+                }
+                var takebookingId = bookingId.First();
+
+                movieContext.SaveChanges();
+
+                foreach (var newSeatNumber in newSeats)
+                {
+                    var newTicketsList = movieContext.Tickets.Where(ticket => ticket.RoomId == roomId)
+                        .Where(ticket => ticket.ShowTimeId == oldShowTimeId)
+                        .Where(ticket => ticket.SeatNumber == newSeatNumber).ToList();
+
+                    foreach (var ticket in newTicketsList)
+                    {
+                        newticketsId.Add(ticket.Id);
+                    }
+                }
+
+                foreach (var ticketId in newticketsId)
+                {
+                    var listOfTickets = movieContext.Tickets.Where(ticket => ticket.Id == ticketId).ToList();
+
+                    foreach (var ticket in listOfTickets)
+                    {
+                        ticket.BookingId = takebookingId;
+                    }
+                }
+
+                movieContext.SaveChanges();
+
+            }
         }
 
         public bool CustomerExists(string phoneNumber)

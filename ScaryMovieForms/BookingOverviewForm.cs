@@ -14,11 +14,11 @@ namespace ScaryMovieForms
     public partial class BookingOverviewForm : Form
     {
 
-        public static string MovieTitle;
-        public static int MovieId;
-        public static string ShowTime;
-        public static int ShowTimeId;
-        public static List<int> TicketList = new List<int>();
+        internal static string MovieTitle;
+        internal static int MovieId;
+        internal static string ShowTime;
+        internal static int ShowTimeId;
+        internal static List<int> TicketList = new List<int>();
               
         public BookingOverviewForm()
         {
@@ -41,6 +41,8 @@ namespace ScaryMovieForms
         {
             var stringList = cklBookingList.CheckedItems.Cast<string>().ToList();
 
+            TicketList.Clear();
+
             var bookingNumberList = new List<int>();
 
             foreach (var number in stringList)
@@ -50,7 +52,7 @@ namespace ScaryMovieForms
 
             foreach (var bookingId in bookingNumberList)
             {
-                MovieTitle = HelperClass.functions.GetMovieTitle(bookingId);
+                MovieTitle = HelperClass.functions.MovieTitleFromBookingId(bookingId);
                 MovieId = HelperClass.functions.GetMovieId(MovieTitle);
                 ShowTime = HelperClass.functions.DisplayShowTimeInOverview(bookingId);
                 ShowTimeId = HelperClass.functions.DisplayShowTimeId(bookingId);

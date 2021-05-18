@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BackEnd;
 using Functions;
+using Microsoft.EntityFrameworkCore;
 
 namespace ScaryMovieForms
 {
@@ -16,6 +18,11 @@ namespace ScaryMovieForms
         public static int MovieChoice = 0;
         public MainMenuForm()
         {
+            using (var movieContext = new MovieAppContext())
+            {
+                movieContext.Database.Migrate();
+            }
+
             InitializeComponent();
         }
 

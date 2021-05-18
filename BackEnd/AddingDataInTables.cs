@@ -113,10 +113,10 @@ namespace BackEnd
 
             modelBuilder.Entity<ShowTime>().HasData(
                 
-                new ShowTime { Id = 1, ShowNumber = 1, Time = "20.00"},
-                new ShowTime { Id = 2, ShowNumber = 2, Time = "22.00"},
-                new ShowTime { Id = 3, ShowNumber = 3, Time = "24.00" },
-                new ShowTime { Id = 4, ShowNumber = 4, Time = "02.00" });
+                new ShowTime { Id = 1, ShowNumber = 1, Time = "2021-06-18 20:00"},
+                new ShowTime { Id = 2, ShowNumber = 2, Time = "2021-06-18 22:00"},
+                new ShowTime { Id = 3, ShowNumber = 3, Time = "2021-06-18 24:00"},
+                new ShowTime { Id = 4, ShowNumber = 4, Time = "2021-06-17 02:00"});
 
            
         }
