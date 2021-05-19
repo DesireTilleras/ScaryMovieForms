@@ -80,6 +80,11 @@ namespace ScaryMovieForms
             btnSaveChangesSeats.Enabled = false;
             btnSaveOnlyTickets.Enabled = false;
 
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
+
 
             int choice = BookingOverviewForm.MovieId;
             cklListTickets.Items.Clear();
@@ -110,6 +115,10 @@ namespace ScaryMovieForms
 
             tlpVisualizeSeats.Visible = true;
             cklListTickets.Visible = true;
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
 
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTimeId))
             {
@@ -133,6 +142,10 @@ namespace ScaryMovieForms
 
             tlpVisualizeSeats.Visible = true;
             cklListTickets.Visible = true;
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
 
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTimeId))
             {
@@ -158,6 +171,10 @@ namespace ScaryMovieForms
 
             tlpVisualizeSeats.Visible = true;
             cklListTickets.Visible = true;
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
 
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTimeId))
             {
@@ -181,6 +198,10 @@ namespace ScaryMovieForms
 
             tlpVisualizeSeats.Visible = true;
             cklListTickets.Visible = true;
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
 
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTimeId))
             {
@@ -203,6 +224,7 @@ namespace ScaryMovieForms
             cklListTickets.Visible = true;
             btnSaveOnlyTickets.Visible = false;
             btnSaveChangesSeats.Visible = true;
+
         }
 
         private void btnSaveChangesSeats_Click(object sender, EventArgs e)

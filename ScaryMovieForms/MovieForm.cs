@@ -63,7 +63,11 @@ namespace ScaryMovieForms
             showTime = 1;
 
             tlpVisualizeSeats.Visible = true;
- 
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
+
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
             {
                 
@@ -116,6 +120,10 @@ namespace ScaryMovieForms
             showTime = 2;
 
             tlpVisualizeSeats.Visible = true;
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
 
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
             {
@@ -138,6 +146,10 @@ namespace ScaryMovieForms
             showTime = 3;
 
             tlpVisualizeSeats.Visible = true;
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
 
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
             {
@@ -160,6 +172,10 @@ namespace ScaryMovieForms
             showTime = 4;
 
             tlpVisualizeSeats.Visible = true;
+            lblFree.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
 
             foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
             {

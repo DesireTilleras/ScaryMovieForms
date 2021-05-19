@@ -67,13 +67,18 @@ namespace ScaryMovieForms
             this.btnSaveChangesSeats = new System.Windows.Forms.Button();
             this.btnSaveOnlyTickets = new System.Windows.Forms.Button();
             this.btnGoBackMenu = new System.Windows.Forms.Button();
+            this.lblBooked = new System.Windows.Forms.Label();
+            this.lblFree = new System.Windows.Forms.Label();
+            this.lblRed = new System.Windows.Forms.Label();
+            this.lblGreen = new System.Windows.Forms.Label();
+            this.lblScreen = new System.Windows.Forms.Label();
             this.tlpVisualizeSeats.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblChangeBooking
             // 
             this.lblChangeBooking.AutoSize = true;
-            this.lblChangeBooking.Location = new System.Drawing.Point(295, 9);
+            this.lblChangeBooking.Location = new System.Drawing.Point(262, 9);
             this.lblChangeBooking.Name = "lblChangeBooking";
             this.lblChangeBooking.Size = new System.Drawing.Size(118, 20);
             this.lblChangeBooking.TabIndex = 0;
@@ -195,7 +200,7 @@ namespace ScaryMovieForms
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat2, 1, 0);
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat1, 0, 0);
             this.tlpVisualizeSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tlpVisualizeSeats.Location = new System.Drawing.Point(532, 105);
+            this.tlpVisualizeSeats.Location = new System.Drawing.Point(532, 53);
             this.tlpVisualizeSeats.Name = "tlpVisualizeSeats";
             this.tlpVisualizeSeats.RowCount = 4;
             this.tlpVisualizeSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -485,7 +490,7 @@ namespace ScaryMovieForms
             // rdoShow1
             // 
             this.rdoShow1.AutoSize = true;
-            this.rdoShow1.Location = new System.Drawing.Point(178, 228);
+            this.rdoShow1.Location = new System.Drawing.Point(178, 237);
             this.rdoShow1.Name = "rdoShow1";
             this.rdoShow1.Size = new System.Drawing.Size(65, 24);
             this.rdoShow1.TabIndex = 11;
@@ -526,11 +531,64 @@ namespace ScaryMovieForms
             this.btnGoBackMenu.UseVisualStyleBackColor = true;
             this.btnGoBackMenu.Click += new System.EventHandler(this.btnGoBackMenu_Click);
             // 
+            // lblBooked
+            // 
+            this.lblBooked.AutoSize = true;
+            this.lblBooked.Location = new System.Drawing.Point(594, 323);
+            this.lblBooked.Name = "lblBooked";
+            this.lblBooked.Size = new System.Drawing.Size(60, 20);
+            this.lblBooked.TabIndex = 21;
+            this.lblBooked.Text = "Booked";
+            this.lblBooked.Visible = false;
+            // 
+            // lblFree
+            // 
+            this.lblFree.AutoSize = true;
+            this.lblFree.Location = new System.Drawing.Point(591, 277);
+            this.lblFree.Name = "lblFree";
+            this.lblFree.Size = new System.Drawing.Size(108, 20);
+            this.lblFree.TabIndex = 20;
+            this.lblFree.Text = "Available seats";
+            this.lblFree.Visible = false;
+            // 
+            // lblRed
+            // 
+            this.lblRed.BackColor = System.Drawing.Color.LightCoral;
+            this.lblRed.Location = new System.Drawing.Point(532, 314);
+            this.lblRed.Name = "lblRed";
+            this.lblRed.Size = new System.Drawing.Size(40, 33);
+            this.lblRed.TabIndex = 19;
+            this.lblRed.Visible = false;
+            // 
+            // lblGreen
+            // 
+            this.lblGreen.BackColor = System.Drawing.Color.LightGreen;
+            this.lblGreen.Location = new System.Drawing.Point(532, 268);
+            this.lblGreen.Name = "lblGreen";
+            this.lblGreen.Size = new System.Drawing.Size(40, 33);
+            this.lblGreen.TabIndex = 18;
+            this.lblGreen.Visible = false;
+            // 
+            // lblScreen
+            // 
+            this.lblScreen.AutoSize = true;
+            this.lblScreen.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblScreen.Location = new System.Drawing.Point(635, 9);
+            this.lblScreen.Name = "lblScreen";
+            this.lblScreen.Size = new System.Drawing.Size(64, 25);
+            this.lblScreen.TabIndex = 22;
+            this.lblScreen.Text = "Screen";
+            // 
             // ChangeBookingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblScreen);
+            this.Controls.Add(this.lblBooked);
+            this.Controls.Add(this.lblFree);
+            this.Controls.Add(this.lblRed);
+            this.Controls.Add(this.lblGreen);
             this.Controls.Add(this.btnGoBackMenu);
             this.Controls.Add(this.btnSaveOnlyTickets);
             this.Controls.Add(this.btnSaveChangesSeats);
@@ -599,5 +657,10 @@ namespace ScaryMovieForms
         private System.Windows.Forms.Button btnSaveChangesSeats;
         private System.Windows.Forms.Button btnSaveOnlyTickets;
         private System.Windows.Forms.Button btnGoBackMenu;
+        private System.Windows.Forms.Label lblBooked;
+        private System.Windows.Forms.Label lblFree;
+        private System.Windows.Forms.Label lblRed;
+        private System.Windows.Forms.Label lblGreen;
+        private System.Windows.Forms.Label lblScreen;
     }
 }

@@ -63,7 +63,7 @@ namespace ScaryMovieForms
             this.btnBack = new System.Windows.Forms.Button();
             this.picMovieImage = new System.Windows.Forms.PictureBox();
             this.lblGreen = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblRed = new System.Windows.Forms.Label();
             this.lblFree = new System.Windows.Forms.Label();
             this.lblBooked = new System.Windows.Forms.Label();
             this.lblAvailabletickets = new System.Windows.Forms.Label();
@@ -469,14 +469,16 @@ namespace ScaryMovieForms
             this.lblGreen.Name = "lblGreen";
             this.lblGreen.Size = new System.Drawing.Size(40, 33);
             this.lblGreen.TabIndex = 12;
+            this.lblGreen.Visible = false;
             // 
-            // label1
+            // lblRed
             // 
-            this.label1.BackColor = System.Drawing.Color.LightCoral;
-            this.label1.Location = new System.Drawing.Point(571, 395);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 33);
-            this.label1.TabIndex = 13;
+            this.lblRed.BackColor = System.Drawing.Color.LightCoral;
+            this.lblRed.Location = new System.Drawing.Point(571, 395);
+            this.lblRed.Name = "lblRed";
+            this.lblRed.Size = new System.Drawing.Size(40, 33);
+            this.lblRed.TabIndex = 13;
+            this.lblRed.Visible = false;
             // 
             // lblFree
             // 
@@ -486,6 +488,7 @@ namespace ScaryMovieForms
             this.lblFree.Size = new System.Drawing.Size(108, 20);
             this.lblFree.TabIndex = 14;
             this.lblFree.Text = "Available seats";
+            this.lblFree.Visible = false;
             // 
             // lblBooked
             // 
@@ -495,6 +498,7 @@ namespace ScaryMovieForms
             this.lblBooked.Size = new System.Drawing.Size(60, 20);
             this.lblBooked.TabIndex = 15;
             this.lblBooked.Text = "Booked";
+            this.lblBooked.Visible = false;
             // 
             // lblAvailabletickets
             // 
@@ -534,7 +538,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.lblAvailabletickets);
             this.Controls.Add(this.lblBooked);
             this.Controls.Add(this.lblFree);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblRed);
             this.Controls.Add(this.lblGreen);
             this.Controls.Add(this.picMovieImage);
             this.Controls.Add(this.btnBack);
@@ -595,7 +599,7 @@ namespace ScaryMovieForms
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox picMovieImage;
         private System.Windows.Forms.Label lblGreen;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRed;
         private System.Windows.Forms.Label lblFree;
         private System.Windows.Forms.Label lblBooked;
         private System.Windows.Forms.Label lblAvailabletickets;
