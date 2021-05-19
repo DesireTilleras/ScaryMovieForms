@@ -20,6 +20,12 @@ namespace ScaryMovieForms
         public MovieForm()
         {
             InitializeComponent();
+
+            rdoShow1.Text = HelperClass.functions.GetShowTime(1);
+            rdoShow2.Text = HelperClass.functions.GetShowTime(2);
+            rdoShow3.Text = HelperClass.functions.GetShowTime(3);
+            rdoShow4.Text = HelperClass.functions.GetShowTime(4);
+
         }
 
         private void rdoShow1_CheckedChanged(object sender, EventArgs e)

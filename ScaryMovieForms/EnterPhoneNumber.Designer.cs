@@ -50,6 +50,7 @@ namespace ScaryMovieForms
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(190, 27);
             this.txtPhoneNumber.TabIndex = 1;
+            this.txtPhoneNumber.TextChanged += new System.EventHandler(this.txtPhoneNumber_TextChanged);
             // 
             // btnNext
             // 

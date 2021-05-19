@@ -336,11 +336,20 @@ namespace Functions
         {
             using (var movieContext = new MovieAppContext())
             {
-                var getCustomerID = movieContext.Customers.Single(customer => customer.PhoneNumber == phoneNumber).Id;
+                try
+                {
+                    var getCustomerID = movieContext.Customers.Single(customer => customer.PhoneNumber == phoneNumber).Id;
 
-                var listOfBookings = movieContext.Bookings.Where(booking => booking.CustomerId == getCustomerID).ToList();
+                    var listOfBookings = movieContext.Bookings.Where(booking => booking.CustomerId == getCustomerID).ToList();
 
-                return listOfBookings;
+                    return listOfBookings;
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+
             }
         }
 
@@ -370,9 +379,49 @@ namespace Functions
                 foreach (var customer in customerList)
                 {
                     movieContext.Customers.Remove(customer);
+                   
+                }
+                movieContext.SaveChanges();
+
+            }
+        }
+
+        public void DeleteBooking(int bookingId)
+        {
+            using (var movieContext = new MovieAppContext())
+            {
+                try
+                {
+                    var customerId = movieContext.Bookings.First(booking => booking.Id == bookingId).CustomerId;
+
+                    var phoneNumber = movieContext.Customers.First(customer => customer.Id == customerId).PhoneNumber;
+
+                    var tickets = movieContext.Tickets.Where(ticket => ticket.BookingId == bookingId).ToList();
+
+                    foreach (var ticket in tickets)
+                    {
+                        ticket.BookingId = null;
+                    }
+                    var bookings = movieContext.Bookings.Where(booking => booking.Id == bookingId).ToList();
+
+                    foreach (var booking in bookings)
+                    {
+                        movieContext.Bookings.Remove(booking);
+                    }
+                    movieContext.SaveChanges();
+
+                    if (ListOfCustomerBookings(phoneNumber).Count == 0)
+                    {
+                        DeleteCustomer(phoneNumber);
+                    }
                     movieContext.SaveChanges();
                 }
+                catch (Exception)
+                {
 
+                    throw;
+                }
+               
             }
         }
 

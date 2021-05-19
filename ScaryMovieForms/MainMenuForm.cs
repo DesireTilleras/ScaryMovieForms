@@ -18,10 +18,6 @@ namespace ScaryMovieForms
         public static int MovieChoice = 0;
         public MainMenuForm()
         {
-            using (var movieContext = new MovieAppContext())
-            {
-                movieContext.Database.Migrate();
-            }
 
             InitializeComponent();
         }

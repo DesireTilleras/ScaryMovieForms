@@ -21,7 +21,7 @@ namespace ScaryMovieForms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            phoneNumber = txtPhoneNumber.Text;
+            phoneNumber = HelperClass.StringWashPhone(txtPhoneNumber.Text);
 
             if (!HelperClass.functions.CustomerExists(phoneNumber))
             {
@@ -45,6 +45,21 @@ namespace ScaryMovieForms
 
             var mainMenuForm = new MainMenuForm();
             mainMenuForm.Show();
+        }
+
+        private void txtPhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                btnNext.Visible = true;
+                txtPhoneNumber.BackColor = HelperClass.ChangeBackColorPhone(txtPhoneNumber.Text);
+            }
+            catch (Exception)
+            {
+                btnNext.Visible = false;
+                txtPhoneNumber.BackColor = Color.LightCoral;
+            }
+
         }
     }
 }

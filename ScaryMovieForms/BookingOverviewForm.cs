@@ -75,5 +75,37 @@ namespace ScaryMovieForms
                 for (int ix = 0; ix < cklBookingList.Items.Count; ++ix)
                     if (e.Index != ix) cklBookingList.SetItemChecked(ix, false);
         }
+
+        private void btnDeleteBooking_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var stringList = cklBookingList.CheckedItems.Cast<string>().ToList();
+
+                TicketList.Clear();
+
+                var bookingNumberList = new List<int>();
+
+                foreach (var number in stringList)
+                {
+                    bookingNumberList.Add(Int32.Parse(number));
+                }
+
+                MessageBox.Show("Are you sure you want to delete this booking?");
+
+                foreach (var bookingId in bookingNumberList)
+                {
+                    HelperClass.functions.DeleteBooking(bookingId);
+                }
+
+                MessageBox.Show("The booking is now deleted, you will automatically go back to main menu");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("");
+            }
+            
+        }
     }
 }

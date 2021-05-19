@@ -81,6 +81,7 @@ namespace ScaryMovieForms
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(176, 27);
             this.txtFirstName.TabIndex = 4;
+            this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // txtLastName
             // 
@@ -88,6 +89,7 @@ namespace ScaryMovieForms
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(176, 27);
             this.txtLastName.TabIndex = 5;
+            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // lblNewCustomer
             // 

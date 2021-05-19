@@ -27,8 +27,8 @@ namespace ScaryMovieForms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            firstName = txtFirstName.Text;
-            lastName = txtLastName.Text;
+            firstName = HelperClass.StringWashName(txtFirstName.Text);
+            lastName = HelperClass.StringWashName(txtLastName.Text);
 
                 HelperClass.functions.AddCustomer(phoneNumber, firstName, lastName);
                 MessageBox.Show($"Firstname: {firstName}\n" +
@@ -49,6 +49,36 @@ namespace ScaryMovieForms
 
             var mainMenuForm = new MainMenuForm();
             mainMenuForm.Show();
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                btnNext.Visible = true;
+                txtFirstName.BackColor = HelperClass.ChangeBackColorName(txtFirstName.Text);
+            }
+            catch (Exception)
+            {
+                txtFirstName.BackColor = Color.LightCoral;
+                btnNext.Visible = false;
+            }
+
+        }
+
+        private void txtLastName_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                btnNext.Visible = true;
+                txtLastName.BackColor = HelperClass.ChangeBackColorName(txtLastName.Text);
+            }
+            catch (Exception)
+            {
+                txtLastName.BackColor = Color.LightCoral;
+                btnNext.Visible = false;
+            }
+
         }
     }
 }

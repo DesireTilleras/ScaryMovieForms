@@ -447,7 +447,7 @@ namespace ScaryMovieForms
             // rdoShow4
             // 
             this.rdoShow4.AutoSize = true;
-            this.rdoShow4.Location = new System.Drawing.Point(233, 358);
+            this.rdoShow4.Location = new System.Drawing.Point(178, 356);
             this.rdoShow4.Name = "rdoShow4";
             this.rdoShow4.Size = new System.Drawing.Size(65, 24);
             this.rdoShow4.TabIndex = 14;
@@ -459,7 +459,7 @@ namespace ScaryMovieForms
             // rdoShow3
             // 
             this.rdoShow3.AutoSize = true;
-            this.rdoShow3.Location = new System.Drawing.Point(233, 317);
+            this.rdoShow3.Location = new System.Drawing.Point(178, 317);
             this.rdoShow3.Name = "rdoShow3";
             this.rdoShow3.Size = new System.Drawing.Size(65, 24);
             this.rdoShow3.TabIndex = 13;
@@ -471,7 +471,7 @@ namespace ScaryMovieForms
             // rdoShow2
             // 
             this.rdoShow2.AutoSize = true;
-            this.rdoShow2.Location = new System.Drawing.Point(233, 274);
+            this.rdoShow2.Location = new System.Drawing.Point(178, 277);
             this.rdoShow2.Name = "rdoShow2";
             this.rdoShow2.Size = new System.Drawing.Size(65, 24);
             this.rdoShow2.TabIndex = 12;
@@ -483,7 +483,7 @@ namespace ScaryMovieForms
             // rdoShow1
             // 
             this.rdoShow1.AutoSize = true;
-            this.rdoShow1.Location = new System.Drawing.Point(233, 228);
+            this.rdoShow1.Location = new System.Drawing.Point(178, 228);
             this.rdoShow1.Name = "rdoShow1";
             this.rdoShow1.Size = new System.Drawing.Size(65, 24);
             this.rdoShow1.TabIndex = 11;

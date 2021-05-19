@@ -63,6 +63,7 @@ namespace ScaryMovieForms
             this.btnDeleteBooking.TabIndex = 2;
             this.btnDeleteBooking.Text = "Delete booking";
             this.btnDeleteBooking.UseVisualStyleBackColor = true;
+            this.btnDeleteBooking.Click += new System.EventHandler(this.btnDeleteBooking_Click);
             // 
             // btnChangeBooking
             // 

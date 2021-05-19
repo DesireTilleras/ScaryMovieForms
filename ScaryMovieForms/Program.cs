@@ -17,7 +17,7 @@ namespace ScaryMovieForms
         [STAThread]
         static void Main()
         {
- 
+            MigrationHelper.Migrate(); 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
