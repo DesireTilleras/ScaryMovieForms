@@ -135,11 +135,13 @@ namespace ScaryMovieForms
             // 
             // cklListTickets
             // 
+            this.cklListTickets.CheckOnClick = true;
             this.cklListTickets.FormattingEnabled = true;
-            this.cklListTickets.Location = new System.Drawing.Point(373, 60);
+            this.cklListTickets.Location = new System.Drawing.Point(382, 60);
             this.cklListTickets.Name = "cklListTickets";
-            this.cklListTickets.Size = new System.Drawing.Size(125, 378);
+            this.cklListTickets.Size = new System.Drawing.Size(104, 378);
             this.cklListTickets.TabIndex = 6;
+            this.cklListTickets.SelectedIndexChanged += new System.EventHandler(this.cklListTickets_SelectedIndexChanged);
             // 
             // tlpVisualizeSeats
             // 

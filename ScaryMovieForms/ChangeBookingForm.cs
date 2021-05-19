@@ -18,6 +18,7 @@ namespace ScaryMovieForms
         private int movieId;
         private List<int> OldSeats = new List<int>();
         private List<int> NewSeats = new List<int>();
+        private List<Label> labels = new List<Label>();
         public ChangeBookingForm()
         {
             InitializeComponent();
@@ -39,10 +40,34 @@ namespace ScaryMovieForms
             rdoShow2.Text = HelperClass.functions.GetShowTime(2);
             rdoShow3.Text = HelperClass.functions.GetShowTime(3);
             rdoShow4.Text = HelperClass.functions.GetShowTime(4);
+
+            labels.Add(lblSeat1);
+            labels.Add(lblSeat2);
+            labels.Add(lblSeat3);
+            labels.Add(lblSeat4);
+            labels.Add(lblSeat5);
+            labels.Add(lblSeat6);
+            labels.Add(lblSeat7);
+            labels.Add(lblSeat8);
+            labels.Add(lblSeat9);
+            labels.Add(lblSeat10);
+            labels.Add(lblSeat11);
+            labels.Add(lblSeat12);
+            labels.Add(lblSeat13);
+            labels.Add(lblSeat14);
+            labels.Add(lblSeat15);
+            labels.Add(lblSeat16);
+            labels.Add(lblSeat17);
+            labels.Add(lblSeat18);
+            labels.Add(lblSeat19);
+            labels.Add(lblSeat20);
+            btnSaveChangesSeats.Enabled = false;
+            btnSaveOnlyTickets.Enabled = false;
         }
 
         private void btnChangeTickets_Click(object sender, EventArgs e)
         {
+            ResetColorOnSeat();
             rdoShow1.Visible = false;
             rdoShow2.Visible = false;
             rdoShow3.Visible = false;
@@ -52,6 +77,9 @@ namespace ScaryMovieForms
 
             btnSaveOnlyTickets.Visible = true;
             btnSaveChangesSeats.Visible = false;
+            btnSaveChangesSeats.Enabled = false;
+            btnSaveOnlyTickets.Enabled = false;
+
 
             int choice = BookingOverviewForm.MovieId;
             cklListTickets.Items.Clear();
@@ -69,18 +97,12 @@ namespace ScaryMovieForms
                     cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
                 }
             }
-
-           
-        }
-
-        private void ChangeBookingForm_Load(object sender, EventArgs e)
-        {
-
-           
+            SetColorOnSeat(cklListTickets.Items);
         }
 
         private void rdoShow1_CheckedChanged(object sender, EventArgs e)
         {
+            ResetColorOnSeat();
             int choice = BookingOverviewForm.MovieId;
             cklListTickets.Items.Clear();
 
@@ -98,10 +120,12 @@ namespace ScaryMovieForms
                     cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
                 }
             }
+            SetColorOnSeat(cklListTickets.Items);
         }
 
         private void rdoShow2_CheckedChanged(object sender, EventArgs e)
         {
+            ResetColorOnSeat();
             int choice = BookingOverviewForm.MovieId;
             cklListTickets.Items.Clear();
 
@@ -119,11 +143,13 @@ namespace ScaryMovieForms
                     cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
                 }
             }
+            SetColorOnSeat(cklListTickets.Items);
 
         }
 
         private void rdoShow3_CheckedChanged(object sender, EventArgs e)
         {
+            ResetColorOnSeat();
             int choice = BookingOverviewForm.MovieId;
 
             cklListTickets.Items.Clear();
@@ -142,10 +168,12 @@ namespace ScaryMovieForms
                     cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
                 }
             }
+            SetColorOnSeat(cklListTickets.Items);
         }
 
         private void rdoShow4_CheckedChanged(object sender, EventArgs e)
         {
+            ResetColorOnSeat();
             int choice = BookingOverviewForm.MovieId;
             cklListTickets.Items.Clear();
 
@@ -163,6 +191,7 @@ namespace ScaryMovieForms
                     cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
                 }
             }
+            SetColorOnSeat(cklListTickets.Items);
         }
 
         private void btnChangeTime_Click(object sender, EventArgs e)
@@ -212,13 +241,10 @@ namespace ScaryMovieForms
 
         }
 
-        private void cklListTickets_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-        }
-
         private void btnSaveOnlyTickets_Click(object sender, EventArgs e)
         {
+            btnSaveChangesSeats.Enabled = false;
+            btnSaveOnlyTickets.Enabled = false;
             NewSeats.Clear();
 
             var stringList = cklListTickets.CheckedItems.Cast<string>().ToList();
@@ -256,6 +282,39 @@ namespace ScaryMovieForms
             var mainMenuForm = new MainMenuForm();
             this.Hide();
             mainMenuForm.Show();
+        }
+
+        public void SetColorOnSeat(CheckedListBox.ObjectCollection items)
+        {
+            foreach (var ticket in items)
+            {
+                foreach (var label in labels)
+                {
+                    if ((string)ticket == label.Text)
+                    {
+                        label.BackColor = Color.LightGreen;
+                    }
+                }
+            }
+        }
+        public void ResetColorOnSeat()
+        {
+            foreach (var label in labels)
+            {
+                label.BackColor = Color.LightCoral;
+            }
+        }
+
+        private void cklListTickets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnSaveChangesSeats.Enabled = true;
+            btnSaveOnlyTickets.Enabled = true;
+
+            if (cklListTickets.CheckedItems.Count == 0)
+            {
+               btnSaveChangesSeats.Enabled = false;
+                btnSaveOnlyTickets.Enabled = false;
+            }
         }
     }
 }

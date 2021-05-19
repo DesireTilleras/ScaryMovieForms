@@ -15,13 +15,14 @@ namespace ScaryMovieForms
     public partial class MovieForm : Form
     {
         public static List<int> BookedTickets = new List<int>();
-        public static List<Label> labels = new List<Label>();
+        private List<Label> labels = new List<Label>();
 
         public static int showTime;
         public MovieForm()
         {
             InitializeComponent();
-            
+
+            btnCheckSeatList.Visible = false;
 
             rdoShow1.Text = HelperClass.functions.GetShowTime(1);
             rdoShow2.Text = HelperClass.functions.GetShowTime(2);
@@ -30,7 +31,6 @@ namespace ScaryMovieForms
 
             picMovieImage.Image = Image.FromFile(HelperClass.functions.GetMovieImagePath(MainMenuForm.MovieChoice));
 
-            
             labels.Add(lblSeat1);
             labels.Add(lblSeat2);
             labels.Add(lblSeat3);
@@ -200,6 +200,20 @@ namespace ScaryMovieForms
             {
                 label.BackColor = Color.LightCoral;
             }
+        }
+
+        private void cklListTickets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        
+            if (cklListTickets.CheckedItems.Count == 0)
+            {
+                btnCheckSeatList.Visible = false;
+            }
+            if (cklListTickets.CheckedItems.Count != 0)
+            {
+                btnCheckSeatList.Visible = true;
+            }
+            
         }
     }
 }

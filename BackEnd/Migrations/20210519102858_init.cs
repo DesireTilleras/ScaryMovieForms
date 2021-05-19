@@ -2,7 +2,7 @@
 
 namespace BackEnd.Migrations
 {
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -180,21 +180,11 @@ namespace BackEnd.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Bookings",
-                columns: new[] { "Id", "CustomerId", "MovieId" },
-                values: new object[,]
-                {
-                    { 1, 1, 1 },
-                    { 2, 2, 2 },
-                    { 3, 3, 3 },
-                    { 4, 4, 4 }
-                });
-
-            migrationBuilder.InsertData(
                 table: "Tickets",
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
+                    { 1, null, 1, 1, 1 },
                     { 528, null, 7, 8, 3 },
                     { 529, null, 7, 9, 3 },
                     { 530, null, 7, 10, 3 },
@@ -205,8 +195,8 @@ namespace BackEnd.Migrations
                     { 535, null, 7, 15, 3 },
                     { 536, null, 7, 16, 3 },
                     { 537, null, 7, 17, 3 },
+                    { 538, null, 7, 18, 3 },
                     { 539, null, 7, 19, 3 },
-                    { 527, null, 7, 7, 3 },
                     { 540, null, 7, 20, 3 },
                     { 601, null, 8, 1, 3 },
                     { 602, null, 8, 2, 3 },
@@ -216,10 +206,10 @@ namespace BackEnd.Migrations
                     { 606, null, 8, 6, 3 },
                     { 607, null, 8, 7, 3 },
                     { 608, null, 8, 8, 3 },
-                    { 538, null, 7, 18, 3 },
+                    { 527, null, 7, 7, 3 },
+                    { 609, null, 8, 9, 3 },
                     { 526, null, 7, 6, 3 },
                     { 524, null, 7, 4, 3 },
-                    { 609, null, 8, 9, 3 },
                     { 443, null, 6, 3, 3 },
                     { 444, null, 6, 4, 3 },
                     { 445, null, 6, 5, 3 },
@@ -232,7 +222,10 @@ namespace BackEnd.Migrations
                     { 452, null, 6, 12, 3 },
                     { 453, null, 6, 13, 3 },
                     { 454, null, 6, 14, 3 },
-                    { 455, null, 6, 15, 3 }
+                    { 455, null, 6, 15, 3 },
+                    { 456, null, 6, 16, 3 },
+                    { 457, null, 6, 17, 3 },
+                    { 458, null, 6, 18, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -240,18 +233,15 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 456, null, 6, 16, 3 },
-                    { 457, null, 6, 17, 3 },
-                    { 458, null, 6, 18, 3 },
                     { 459, null, 6, 19, 3 },
                     { 460, null, 6, 20, 3 },
                     { 521, null, 7, 1, 3 },
                     { 522, null, 7, 2, 3 },
                     { 523, null, 7, 3, 3 },
                     { 525, null, 7, 5, 3 },
+                    { 442, null, 6, 2, 3 },
                     { 610, null, 8, 10, 3 },
                     { 612, null, 8, 12, 3 },
-                    { 442, null, 6, 2, 3 },
                     { 698, null, 9, 18, 3 },
                     { 699, null, 9, 19, 3 },
                     { 700, null, 9, 20, 3 },
@@ -281,7 +271,10 @@ namespace BackEnd.Migrations
                     { 614, null, 8, 14, 3 },
                     { 615, null, 8, 15, 3 },
                     { 616, null, 8, 16, 3 },
-                    { 617, null, 8, 17, 3 }
+                    { 617, null, 8, 17, 3 },
+                    { 618, null, 8, 18, 3 },
+                    { 619, null, 8, 19, 3 },
+                    { 620, null, 8, 20, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -289,9 +282,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 618, null, 8, 18, 3 },
-                    { 619, null, 8, 19, 3 },
-                    { 620, null, 8, 20, 3 },
                     { 681, null, 9, 1, 3 },
                     { 682, null, 9, 2, 3 },
                     { 683, null, 9, 3, 3 },
@@ -306,9 +296,9 @@ namespace BackEnd.Migrations
                     { 692, null, 9, 12, 3 },
                     { 693, null, 9, 13, 3 },
                     { 695, null, 9, 15, 3 },
+                    { 779, null, 10, 19, 3 },
                     { 441, null, 6, 1, 3 },
                     { 379, null, 5, 19, 3 },
-                    { 779, null, 10, 19, 3 },
                     { 128, null, 2, 8, 3 },
                     { 129, null, 2, 9, 3 },
                     { 130, null, 2, 10, 3 },
@@ -330,7 +320,10 @@ namespace BackEnd.Migrations
                     { 206, null, 3, 6, 3 },
                     { 207, null, 3, 7, 3 },
                     { 208, null, 3, 8, 3 },
-                    { 127, null, 2, 7, 3 }
+                    { 127, null, 2, 7, 3 },
+                    { 209, null, 3, 9, 3 },
+                    { 126, null, 2, 6, 3 },
+                    { 124, null, 2, 4, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -338,9 +331,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 209, null, 3, 9, 3 },
-                    { 126, null, 2, 6, 3 },
-                    { 124, null, 2, 4, 3 },
                     { 43, null, 1, 3, 3 },
                     { 44, null, 1, 4, 3 },
                     { 45, null, 1, 5, 3 },
@@ -379,7 +369,10 @@ namespace BackEnd.Migrations
                     { 368, null, 5, 8, 3 },
                     { 369, null, 5, 9, 3 },
                     { 370, null, 5, 10, 3 },
-                    { 371, null, 5, 11, 3 }
+                    { 371, null, 5, 11, 3 },
+                    { 372, null, 5, 12, 3 },
+                    { 373, null, 5, 13, 3 },
+                    { 374, null, 5, 14, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -387,9 +380,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 372, null, 5, 12, 3 },
-                    { 373, null, 5, 13, 3 },
-                    { 374, null, 5, 14, 3 },
                     { 375, null, 5, 15, 3 },
                     { 376, null, 5, 16, 3 },
                     { 377, null, 5, 17, 3 },
@@ -420,15 +410,18 @@ namespace BackEnd.Migrations
                     { 292, null, 4, 12, 3 },
                     { 293, null, 4, 13, 3 },
                     { 295, null, 4, 15, 3 },
+                    { 42, null, 1, 2, 3 },
                     { 780, null, 10, 20, 3 },
                     { 62, null, 1, 2, 4 },
-                    { 42, null, 1, 2, 3 },
                     { 548, null, 7, 8, 4 },
                     { 549, null, 7, 9, 4 },
                     { 550, null, 7, 10, 4 },
                     { 551, null, 7, 11, 4 },
                     { 552, null, 7, 12, 4 },
-                    { 553, null, 7, 13, 4 }
+                    { 553, null, 7, 13, 4 },
+                    { 554, null, 7, 14, 4 },
+                    { 555, null, 7, 15, 4 },
+                    { 556, null, 7, 16, 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -436,9 +429,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 554, null, 7, 14, 4 },
-                    { 555, null, 7, 15, 4 },
-                    { 556, null, 7, 16, 4 },
                     { 557, null, 7, 17, 4 },
                     { 558, null, 7, 18, 4 },
                     { 559, null, 7, 19, 4 },
@@ -477,7 +467,10 @@ namespace BackEnd.Migrations
                     { 542, null, 7, 2, 4 },
                     { 543, null, 7, 3, 4 },
                     { 545, null, 7, 5, 4 },
-                    { 462, null, 6, 2, 4 }
+                    { 462, null, 6, 2, 4 },
+                    { 630, null, 8, 10, 4 },
+                    { 632, null, 8, 12, 4 },
+                    { 718, null, 9, 18, 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -485,9 +478,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 630, null, 8, 10, 4 },
-                    { 632, null, 8, 12, 4 },
-                    { 718, null, 9, 18, 4 },
                     { 719, null, 9, 19, 4 },
                     { 720, null, 9, 20, 4 },
                     { 781, null, 10, 1, 4 },
@@ -526,7 +516,10 @@ namespace BackEnd.Migrations
                     { 704, null, 9, 4, 4 },
                     { 705, null, 9, 5, 4 },
                     { 706, null, 9, 6, 4 },
-                    { 707, null, 9, 7, 4 }
+                    { 707, null, 9, 7, 4 },
+                    { 708, null, 9, 8, 4 },
+                    { 709, null, 9, 9, 4 },
+                    { 710, null, 9, 10, 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -534,9 +527,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 708, null, 9, 8, 4 },
-                    { 709, null, 9, 9, 4 },
-                    { 710, null, 9, 10, 4 },
                     { 711, null, 9, 11, 4 },
                     { 712, null, 9, 12, 4 },
                     { 713, null, 9, 13, 4 },
@@ -575,7 +565,10 @@ namespace BackEnd.Migrations
                     { 66, null, 1, 6, 4 },
                     { 67, null, 1, 7, 4 },
                     { 68, null, 1, 8, 4 },
-                    { 69, null, 1, 9, 4 }
+                    { 69, null, 1, 9, 4 },
+                    { 70, null, 1, 10, 4 },
+                    { 71, null, 1, 11, 4 },
+                    { 72, null, 1, 12, 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -583,9 +576,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 70, null, 1, 10, 4 },
-                    { 71, null, 1, 11, 4 },
-                    { 72, null, 1, 12, 4 },
                     { 73, null, 1, 13, 4 },
                     { 74, null, 1, 14, 4 },
                     { 75, null, 1, 15, 4 },
@@ -624,7 +614,10 @@ namespace BackEnd.Migrations
                     { 398, null, 5, 18, 4 },
                     { 317, null, 4, 17, 4 },
                     { 231, null, 3, 11, 4 },
-                    { 316, null, 4, 16, 4 }
+                    { 316, null, 4, 16, 4 },
+                    { 314, null, 4, 14, 4 },
+                    { 233, null, 3, 13, 4 },
+                    { 234, null, 3, 14, 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -632,9 +625,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 314, null, 4, 14, 4 },
-                    { 233, null, 3, 13, 4 },
-                    { 234, null, 3, 14, 4 },
                     { 235, null, 3, 15, 4 },
                     { 236, null, 3, 16, 4 },
                     { 237, null, 3, 17, 4 },
@@ -656,8 +646,8 @@ namespace BackEnd.Migrations
                     { 313, null, 4, 13, 4 },
                     { 315, null, 4, 15, 4 },
                     { 41, null, 1, 1, 3 },
+                    { 760, null, 10, 20, 2 },
                     { 759, null, 10, 19, 2 },
-                    { 799, null, 10, 19, 4 },
                     { 487, null, 7, 7, 1 },
                     { 488, null, 7, 8, 1 },
                     { 489, null, 7, 9, 1 },
@@ -673,7 +663,10 @@ namespace BackEnd.Migrations
                     { 499, null, 7, 19, 1 },
                     { 500, null, 7, 20, 1 },
                     { 561, null, 8, 1, 1 },
-                    { 562, null, 8, 2, 1 }
+                    { 562, null, 8, 2, 1 },
+                    { 563, null, 8, 3, 1 },
+                    { 564, null, 8, 4, 1 },
+                    { 565, null, 8, 5, 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -681,9 +674,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 563, null, 8, 3, 1 },
-                    { 564, null, 8, 4, 1 },
-                    { 565, null, 8, 5, 1 },
                     { 566, null, 8, 6, 1 },
                     { 567, null, 8, 7, 1 },
                     { 486, null, 7, 6, 1 },
@@ -722,7 +712,10 @@ namespace BackEnd.Migrations
                     { 721, null, 10, 1, 1 },
                     { 722, null, 10, 2, 1 },
                     { 723, null, 10, 3, 1 },
-                    { 724, null, 10, 4, 1 }
+                    { 724, null, 10, 4, 1 },
+                    { 725, null, 10, 5, 1 },
+                    { 726, null, 10, 6, 1 },
+                    { 727, null, 10, 7, 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -730,9 +723,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 725, null, 10, 5, 1 },
-                    { 726, null, 10, 6, 1 },
-                    { 727, null, 10, 7, 1 },
                     { 728, null, 10, 8, 1 },
                     { 729, null, 10, 9, 1 },
                     { 730, null, 10, 10, 1 },
@@ -771,7 +761,10 @@ namespace BackEnd.Migrations
                     { 654, null, 9, 14, 1 },
                     { 738, null, 10, 18, 1 },
                     { 340, null, 5, 20, 1 },
-                    { 338, null, 5, 18, 1 }
+                    { 338, null, 5, 18, 1 },
+                    { 87, null, 2, 7, 1 },
+                    { 88, null, 2, 8, 1 },
+                    { 89, null, 2, 9, 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -779,9 +772,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 87, null, 2, 7, 1 },
-                    { 88, null, 2, 8, 1 },
-                    { 89, null, 2, 9, 1 },
                     { 90, null, 2, 10, 1 },
                     { 91, null, 2, 11, 1 },
                     { 92, null, 2, 12, 1 },
@@ -804,7 +794,6 @@ namespace BackEnd.Migrations
                     { 168, null, 3, 8, 1 },
                     { 85, null, 2, 5, 1 },
                     { 83, null, 2, 3, 1 },
-                    { 1, null, 1, 1, 1 },
                     { 2, null, 1, 2, 1 },
                     { 3, null, 1, 3, 1 },
                     { 4, null, 1, 4, 1 },
@@ -820,7 +809,11 @@ namespace BackEnd.Migrations
                     { 14, null, 1, 14, 1 },
                     { 15, null, 1, 15, 1 },
                     { 16, null, 1, 16, 1 },
-                    { 17, null, 1, 17, 1 }
+                    { 17, null, 1, 17, 1 },
+                    { 18, null, 1, 18, 1 },
+                    { 19, null, 1, 19, 1 },
+                    { 20, null, 1, 20, 1 },
+                    { 81, null, 2, 1, 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -828,9 +821,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 18, null, 1, 18, 1 },
-                    { 19, null, 1, 19, 1 },
-                    { 81, null, 2, 1, 1 },
                     { 82, null, 2, 2, 1 },
                     { 84, null, 2, 4, 1 },
                     { 339, null, 5, 19, 1 },
@@ -869,7 +859,10 @@ namespace BackEnd.Migrations
                     { 177, null, 3, 17, 1 },
                     { 178, null, 3, 18, 1 },
                     { 179, null, 3, 19, 1 },
-                    { 180, null, 3, 20, 1 }
+                    { 180, null, 3, 20, 1 },
+                    { 241, null, 4, 1, 1 },
+                    { 242, null, 4, 2, 1 },
+                    { 243, null, 4, 3, 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -877,9 +870,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 241, null, 4, 1, 1 },
-                    { 242, null, 4, 2, 1 },
-                    { 243, null, 4, 3, 1 },
                     { 244, null, 4, 4, 1 },
                     { 245, null, 4, 5, 1 },
                     { 246, null, 4, 6, 1 },
@@ -890,9 +880,9 @@ namespace BackEnd.Migrations
                     { 251, null, 4, 11, 1 },
                     { 252, null, 4, 12, 1 },
                     { 254, null, 4, 14, 1 },
-                    { 760, null, 10, 20, 2 },
                     { 739, null, 10, 19, 1 },
-                    { 22, null, 1, 2, 2 },
+                    { 740, null, 10, 20, 1 },
+                    { 21, null, 1, 1, 2 },
                     { 508, null, 7, 8, 2 },
                     { 509, null, 7, 9, 2 },
                     { 510, null, 7, 10, 2 },
@@ -918,7 +908,10 @@ namespace BackEnd.Migrations
                     { 589, null, 8, 9, 2 },
                     { 506, null, 7, 6, 2 },
                     { 504, null, 7, 4, 2 },
-                    { 423, null, 6, 3, 2 }
+                    { 423, null, 6, 3, 2 },
+                    { 424, null, 6, 4, 2 },
+                    { 425, null, 6, 5, 2 },
+                    { 426, null, 6, 6, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -926,9 +919,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 424, null, 6, 4, 2 },
-                    { 425, null, 6, 5, 2 },
-                    { 426, null, 6, 6, 2 },
                     { 427, null, 6, 7, 2 },
                     { 428, null, 6, 8, 2 },
                     { 429, null, 6, 9, 2 },
@@ -967,7 +957,10 @@ namespace BackEnd.Migrations
                     { 752, null, 10, 12, 2 },
                     { 753, null, 10, 13, 2 },
                     { 754, null, 10, 14, 2 },
-                    { 755, null, 10, 15, 2 }
+                    { 755, null, 10, 15, 2 },
+                    { 756, null, 10, 16, 2 },
+                    { 757, null, 10, 17, 2 },
+                    { 758, null, 10, 18, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -975,9 +968,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 756, null, 10, 16, 2 },
-                    { 757, null, 10, 17, 2 },
-                    { 758, null, 10, 18, 2 },
                     { 677, null, 9, 17, 2 },
                     { 591, null, 8, 11, 2 },
                     { 676, null, 9, 16, 2 },
@@ -1004,9 +994,10 @@ namespace BackEnd.Migrations
                     { 672, null, 9, 12, 2 },
                     { 673, null, 9, 13, 2 },
                     { 675, null, 9, 15, 2 },
-                    { 740, null, 10, 20, 1 },
                     { 421, null, 6, 1, 2 },
+                    { 360, null, 5, 20, 2 },
                     { 359, null, 5, 19, 2 },
+                    { 107, null, 2, 7, 2 },
                     { 108, null, 2, 8, 2 },
                     { 109, null, 2, 9, 2 },
                     { 110, null, 2, 10, 2 },
@@ -1016,7 +1007,9 @@ namespace BackEnd.Migrations
                     { 114, null, 2, 14, 2 },
                     { 115, null, 2, 15, 2 },
                     { 116, null, 2, 16, 2 },
-                    { 117, null, 2, 17, 2 }
+                    { 117, null, 2, 17, 2 },
+                    { 118, null, 2, 18, 2 },
+                    { 119, null, 2, 19, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -1024,8 +1017,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 118, null, 2, 18, 2 },
-                    { 119, null, 2, 19, 2 },
                     { 120, null, 2, 20, 2 },
                     { 181, null, 3, 1, 2 },
                     { 182, null, 3, 2, 2 },
@@ -1034,11 +1025,11 @@ namespace BackEnd.Migrations
                     { 185, null, 3, 5, 2 },
                     { 186, null, 3, 6, 2 },
                     { 187, null, 3, 7, 2 },
-                    { 188, null, 3, 8, 2 },
-                    { 107, null, 2, 7, 2 },
-                    { 189, null, 3, 9, 2 },
                     { 106, null, 2, 6, 2 },
-                    { 104, null, 2, 4, 2 },
+                    { 188, null, 3, 8, 2 },
+                    { 105, null, 2, 5, 2 },
+                    { 103, null, 2, 3, 2 },
+                    { 22, null, 1, 2, 2 },
                     { 23, null, 1, 3, 2 },
                     { 24, null, 1, 4, 2 },
                     { 25, null, 1, 5, 2 },
@@ -1059,13 +1050,15 @@ namespace BackEnd.Migrations
                     { 40, null, 1, 20, 2 },
                     { 101, null, 2, 1, 2 },
                     { 102, null, 2, 2, 2 },
-                    { 103, null, 2, 3, 2 },
-                    { 105, null, 2, 5, 2 },
-                    { 360, null, 5, 20, 2 },
+                    { 104, null, 2, 4, 2 },
+                    { 189, null, 3, 9, 2 },
                     { 190, null, 3, 10, 2 },
-                    { 192, null, 3, 12, 2 },
+                    { 191, null, 3, 11, 2 },
                     { 278, null, 4, 18, 2 },
-                    { 279, null, 4, 19, 2 }
+                    { 279, null, 4, 19, 2 },
+                    { 280, null, 4, 20, 2 },
+                    { 341, null, 5, 1, 2 },
+                    { 342, null, 5, 2, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -1073,9 +1066,6 @@ namespace BackEnd.Migrations
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
                 values: new object[,]
                 {
-                    { 280, null, 4, 20, 2 },
-                    { 341, null, 5, 1, 2 },
-                    { 342, null, 5, 2, 2 },
                     { 343, null, 5, 3, 2 },
                     { 344, null, 5, 4, 2 },
                     { 345, null, 5, 5, 2 },
@@ -1093,9 +1083,10 @@ namespace BackEnd.Migrations
                     { 357, null, 5, 17, 2 },
                     { 358, null, 5, 18, 2 },
                     { 277, null, 4, 17, 2 },
-                    { 191, null, 3, 11, 2 },
                     { 276, null, 4, 16, 2 },
+                    { 275, null, 4, 15, 2 },
                     { 274, null, 4, 14, 2 },
+                    { 192, null, 3, 12, 2 },
                     { 193, null, 3, 13, 2 },
                     { 194, null, 3, 14, 2 },
                     { 195, null, 3, 15, 2 },
@@ -1105,8 +1096,8 @@ namespace BackEnd.Migrations
                     { 199, null, 3, 19, 2 },
                     { 200, null, 3, 20, 2 },
                     { 261, null, 4, 1, 2 },
+                    { 799, null, 10, 19, 4 },
                     { 262, null, 4, 2, 2 },
-                    { 263, null, 4, 3, 2 },
                     { 264, null, 4, 4, 2 },
                     { 265, null, 4, 5, 2 },
                     { 266, null, 4, 6, 2 },
@@ -1114,29 +1105,20 @@ namespace BackEnd.Migrations
                     { 268, null, 4, 8, 2 },
                     { 269, null, 4, 9, 2 },
                     { 270, null, 4, 10, 2 },
-                    { 271, null, 4, 11, 2 }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Tickets",
-                columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
-                values: new object[,]
-                {
+                    { 271, null, 4, 11, 2 },
                     { 272, null, 4, 12, 2 },
-                    { 273, null, 4, 13, 2 },
-                    { 275, null, 4, 15, 2 },
-                    { 800, null, 10, 20, 4 }
+                    { 273, null, 4, 13, 2 }
                 });
 
             migrationBuilder.InsertData(
                 table: "Tickets",
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
-                values: new object[] { 20, 1, 1, 20, 1 });
+                values: new object[] { 263, null, 4, 3, 2 });
 
             migrationBuilder.InsertData(
                 table: "Tickets",
                 columns: new[] { "Id", "BookingId", "RoomId", "SeatNumber", "ShowTimeId" },
-                values: new object[] { 21, 1, 1, 1, 2 });
+                values: new object[] { 800, null, 10, 20, 4 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Bookings_CustomerId",

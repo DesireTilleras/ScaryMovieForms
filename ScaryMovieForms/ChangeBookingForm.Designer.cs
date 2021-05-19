@@ -155,10 +155,12 @@ namespace ScaryMovieForms
             // 
             // cklListTickets
             // 
+            this.cklListTickets.CheckOnClick = true;
+            this.cklListTickets.Cursor = System.Windows.Forms.Cursors.Default;
             this.cklListTickets.FormattingEnabled = true;
-            this.cklListTickets.Location = new System.Drawing.Point(376, 47);
+            this.cklListTickets.Location = new System.Drawing.Point(406, 51);
             this.cklListTickets.Name = "cklListTickets";
-            this.cklListTickets.Size = new System.Drawing.Size(125, 378);
+            this.cklListTickets.Size = new System.Drawing.Size(93, 378);
             this.cklListTickets.TabIndex = 9;
             this.cklListTickets.Visible = false;
             this.cklListTickets.SelectedIndexChanged += new System.EventHandler(this.cklListTickets_SelectedIndexChanged);
@@ -550,7 +552,6 @@ namespace ScaryMovieForms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChangeBookingForm";
             this.Text = "ChangeBookingForm";
-            this.Load += new System.EventHandler(this.ChangeBookingForm_Load);
             this.tlpVisualizeSeats.ResumeLayout(false);
             this.tlpVisualizeSeats.PerformLayout();
             this.ResumeLayout(false);

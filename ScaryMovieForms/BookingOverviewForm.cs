@@ -107,5 +107,12 @@ namespace ScaryMovieForms
             }
             
         }
+
+        private void btnGoBackMenu_Click(object sender, EventArgs e)
+        {
+            var mainMenuForm = new MainMenuForm();
+            this.Hide();
+            mainMenuForm.Show();
+        }
     }
 }

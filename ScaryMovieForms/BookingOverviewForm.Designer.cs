@@ -84,6 +84,7 @@ namespace ScaryMovieForms
             this.btnGoBackMenu.TabIndex = 4;
             this.btnGoBackMenu.Text = "Go back to main menu";
             this.btnGoBackMenu.UseVisualStyleBackColor = true;
+            this.btnGoBackMenu.Click += new System.EventHandler(this.btnGoBackMenu_Click);
             // 
             // lstShowBookingInfo
             // 

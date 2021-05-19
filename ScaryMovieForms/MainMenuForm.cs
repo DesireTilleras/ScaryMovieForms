@@ -18,12 +18,15 @@ namespace ScaryMovieForms
         public static int MovieChoice = 0;
         public MainMenuForm()
         {
-
+            
             InitializeComponent();
+
+            btnClearInfo.Visible = false;
         }
 
         private void rdoRamp_CheckedChanged(object sender, EventArgs e)
         {
+            btnClearInfo.Visible = true;
             btnMovie1.Visible = false;
             btnMovie2.Visible = false;
             btnMovie3.Visible = false;
@@ -62,6 +65,7 @@ namespace ScaryMovieForms
             lblMovieName6.Visible = true;
             lblMovieName7.Visible = true;
             lblMovieName8.Visible = true;
+            btnClearInfo.Visible = false;
         }
 
         private void btnMovie4_Click(object sender, EventArgs e)

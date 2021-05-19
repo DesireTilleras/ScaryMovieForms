@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackEnd.Migrations
 {
     [DbContext(typeof(MovieAppContext))]
-    [Migration("20210519085823_Init")]
-    partial class Init
+    [Migration("20210519102858_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,32 +41,6 @@ namespace BackEnd.Migrations
                     b.HasIndex("MovieId");
 
                     b.ToTable("Bookings");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CustomerId = 1,
-                            MovieId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CustomerId = 2,
-                            MovieId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CustomerId = 3,
-                            MovieId = 3
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CustomerId = 4,
-                            MovieId = 4
-                        });
                 });
 
             modelBuilder.Entity("BackEnd.Customer", b =>
@@ -494,7 +468,6 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 20,
-                            BookingId = 1,
                             RoomId = 1,
                             SeatNumber = 20,
                             ShowTimeId = 1
@@ -502,7 +475,6 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 21,
-                            BookingId = 1,
                             RoomId = 1,
                             SeatNumber = 1,
                             ShowTimeId = 2

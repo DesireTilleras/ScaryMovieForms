@@ -132,16 +132,7 @@ namespace BackEnd
         }
 
 
-        public static void Seed2(this ModelBuilder modelBuilder)
-        {
-                        modelBuilder.Entity<Booking>().HasData(
-            new Booking { Id = 1, CustomerId = 1, MovieId = 1},
-            new Booking { Id = 2, CustomerId = 2, MovieId = 2},
-            new Booking { Id = 3, CustomerId = 3, MovieId = 3},
-            new Booking { Id = 4, CustomerId = 4, MovieId = 4}
-
-            );
-        }    
+  
         
         public static void Seed3(this ModelBuilder modelBuilder)
         {
@@ -153,13 +144,6 @@ namespace BackEnd
                 int showNumber = 0;
 
                 if(seatNumber == 21) { seatNumber = 1; }
-
-
-                if (i == 20 || i == 21) { bookingId = 1; }
-                //if (i == 120 || i == 121) { bookingId = 2; }
-                //if (i == 185 || i == 186 || i == 187) { bookingId = 3; }
-                //if (i == 265 || i == 266) { bookingId = 4; }
-                else { bookingId = null; }
 
                 if (i >= 1 && i <= 80)
                 {
@@ -256,11 +240,11 @@ namespace BackEnd
                         Id = i,
                         RoomId = number,
                         ShowTimeId = showNumber,
-                        BookingId = bookingId,
+                        BookingId = null,
                         SeatNumber = seatNumber
 
 
-                    });
+                    }); ;
             }
         }
     }

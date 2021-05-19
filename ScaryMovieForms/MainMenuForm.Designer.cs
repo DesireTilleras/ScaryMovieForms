@@ -334,8 +334,9 @@ namespace ScaryMovieForms
             this.btnClearInfo.Name = "btnClearInfo";
             this.btnClearInfo.Size = new System.Drawing.Size(94, 29);
             this.btnClearInfo.TabIndex = 3;
-            this.btnClearInfo.Text = "Clear";
+            this.btnClearInfo.Text = "Reset";
             this.btnClearInfo.UseVisualStyleBackColor = true;
+            this.btnClearInfo.Visible = false;
             this.btnClearInfo.Click += new System.EventHandler(this.btnClearInfo_Click);
             // 
             // btnShowMyBookings
