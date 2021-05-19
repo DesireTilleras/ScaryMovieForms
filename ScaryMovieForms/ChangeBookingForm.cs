@@ -326,17 +326,44 @@ namespace ScaryMovieForms
                 label.BackColor = Color.LightCoral;
             }
         }
+        public void SetColorOnChoice(CheckedListBox.CheckedItemCollection items)
+        {
+            foreach (var ticket in items)
+            {
+                foreach (var label in labels)
+                {
+                    if ((string)ticket == label.Text)
+                    {
+                        label.BackColor = Color.LightSalmon;
+                    }
+                }
+            }
+        }
 
         private void cklListTickets_SelectedIndexChanged(object sender, EventArgs e)
         {
+            foreach (var item in cklListTickets.Items)
+            {
+                foreach (var checkedItem in cklListTickets.CheckedItems)
+                {
+                    if (item.ToString() == checkedItem.ToString())
+                    {
+                        SetColorOnSeat(cklListTickets.Items);
+                    }
+                }
+            }
+
             btnSaveChangesSeats.Enabled = true;
             btnSaveOnlyTickets.Enabled = true;
 
             if (cklListTickets.CheckedItems.Count == 0)
             {
+                SetColorOnSeat(cklListTickets.Items);
                btnSaveChangesSeats.Enabled = false;
                 btnSaveOnlyTickets.Enabled = false;
             }
+            SetColorOnChoice(cklListTickets.CheckedItems);
+
         }
     }
 }

@@ -39,6 +39,68 @@ namespace BackEnd.Migrations
                     b.HasIndex("MovieId");
 
                     b.ToTable("Bookings");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CustomerId = 1,
+                            MovieId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CustomerId = 2,
+                            MovieId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CustomerId = 3,
+                            MovieId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CustomerId = 4,
+                            MovieId = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CustomerId = 5,
+                            MovieId = 5
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CustomerId = 6,
+                            MovieId = 6
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CustomerId = 7,
+                            MovieId = 7
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CustomerId = 8,
+                            MovieId = 8
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CustomerId = 9,
+                            MovieId = 9
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CustomerId = 10,
+                            MovieId = 10
+                        });
                 });
 
             modelBuilder.Entity("BackEnd.Customer", b =>
@@ -71,28 +133,70 @@ namespace BackEnd.Migrations
                             Id = 1,
                             FirstName = "Desire",
                             LastName = "Tillerås",
-                            PhoneNumber = "07012345678"
+                            PhoneNumber = "0700000001"
                         },
                         new
                         {
                             Id = 2,
                             FirstName = "Tintin",
                             LastName = "Petersson",
-                            PhoneNumber = "07045678912"
+                            PhoneNumber = "0700000002"
                         },
                         new
                         {
                             Id = 3,
                             FirstName = "Amanda",
                             LastName = "Eriksson",
-                            PhoneNumber = "0707894562"
+                            PhoneNumber = "0700000003"
                         },
                         new
                         {
                             Id = 4,
                             FirstName = "Jonathan",
                             LastName = "Kullman",
-                            PhoneNumber = "0701245789"
+                            PhoneNumber = "0700000004"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            FirstName = "Jesper",
+                            LastName = "Hultén",
+                            PhoneNumber = "0700000005"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            FirstName = "Eva-Marie",
+                            LastName = "Tillerås",
+                            PhoneNumber = "0700000006"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            FirstName = "Linda",
+                            LastName = "Johansson",
+                            PhoneNumber = "0700000007"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            FirstName = "Alma",
+                            LastName = "Ragnarsson",
+                            PhoneNumber = "0700000008"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            FirstName = "Emmiline",
+                            LastName = "Larsson",
+                            PhoneNumber = "0700000009"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            FirstName = "Madeleine",
+                            LastName = "Ivarsson",
+                            PhoneNumber = "0700000010"
                         });
                 });
 
@@ -333,6 +437,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 1,
+                            BookingId = 1,
                             RoomId = 1,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -340,6 +445,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 2,
+                            BookingId = 1,
                             RoomId = 1,
                             SeatNumber = 2,
                             ShowTimeId = 1
@@ -893,6 +999,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 81,
+                            BookingId = 2,
                             RoomId = 2,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -1453,6 +1560,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 161,
+                            BookingId = 3,
                             RoomId = 3,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -1460,6 +1568,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 162,
+                            BookingId = 3,
                             RoomId = 3,
                             SeatNumber = 2,
                             ShowTimeId = 1
@@ -2013,6 +2122,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 241,
+                            BookingId = 4,
                             RoomId = 4,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -2573,6 +2683,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 321,
+                            BookingId = 5,
                             RoomId = 5,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -3133,6 +3244,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 401,
+                            BookingId = 6,
                             RoomId = 6,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -3693,6 +3805,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 481,
+                            BookingId = 7,
                             RoomId = 7,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -4253,6 +4366,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 561,
+                            BookingId = 8,
                             RoomId = 8,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -4813,6 +4927,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 641,
+                            BookingId = 9,
                             RoomId = 9,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -5373,6 +5488,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 721,
+                            BookingId = 10,
                             RoomId = 10,
                             SeatNumber = 1,
                             ShowTimeId = 1
@@ -5380,6 +5496,7 @@ namespace BackEnd.Migrations
                         new
                         {
                             Id = 722,
+                            BookingId = 10,
                             RoomId = 10,
                             SeatNumber = 2,
                             ShowTimeId = 1

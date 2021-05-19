@@ -116,10 +116,16 @@ namespace BackEnd
             }
 
             modelBuilder.Entity<Customer>().HasData(
-                new Customer { Id = 1, FirstName = "Desire", LastName = "Tillerås", PhoneNumber = "07012345678"},
-                new Customer { Id = 2, FirstName = "Tintin", LastName = "Petersson", PhoneNumber = "07045678912"},
-                new Customer { Id = 3, FirstName = "Amanda", LastName = "Eriksson", PhoneNumber = "0707894562"},
-                new Customer { Id = 4, FirstName = "Jonathan", LastName = "Kullman", PhoneNumber = "0701245789"});
+                new Customer { Id = 1, FirstName = "Desire", LastName = "Tillerås", PhoneNumber = "0700000001"},
+                new Customer { Id = 2, FirstName = "Tintin", LastName = "Petersson", PhoneNumber = "0700000002" },
+                new Customer { Id = 3, FirstName = "Amanda", LastName = "Eriksson", PhoneNumber = "0700000003" },
+                new Customer { Id = 4, FirstName = "Jonathan", LastName = "Kullman", PhoneNumber = "0700000004" },
+                new Customer { Id = 5, FirstName = "Jesper", LastName = "Hultén", PhoneNumber = "0700000005" },
+                new Customer { Id = 6, FirstName = "Eva-Marie", LastName = "Tillerås", PhoneNumber = "0700000006" },
+                new Customer { Id = 7, FirstName = "Linda", LastName = "Johansson", PhoneNumber = "0700000007" },
+                new Customer { Id = 8, FirstName = "Alma", LastName = "Ragnarsson", PhoneNumber = "0700000008" },
+                new Customer { Id = 9, FirstName = "Emmiline", LastName = "Larsson", PhoneNumber = "0700000009" },
+                new Customer { Id = 10, FirstName = "Madeleine", LastName = "Ivarsson", PhoneNumber = "0700000010" });
 
             modelBuilder.Entity<ShowTime>().HasData(
                 
@@ -131,18 +137,38 @@ namespace BackEnd
            
         }
 
+        public static void Seed2(this ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Booking>().HasData(
+                new Booking { Id = 1, CustomerId = 1, MovieId = 1 },
+                new Booking { Id = 2, CustomerId = 2, MovieId = 2 },
+                new Booking { Id = 3, CustomerId = 3, MovieId = 3 },
+                new Booking { Id = 4, CustomerId = 4, MovieId = 4 },
+                new Booking { Id = 5, CustomerId = 5, MovieId = 5 },
+                new Booking { Id = 6, CustomerId = 6, MovieId = 6 },
+                new Booking { Id = 7, CustomerId = 7, MovieId = 7 },
+                new Booking { Id = 8, CustomerId = 8, MovieId = 8 },
+                new Booking { Id = 9, CustomerId = 9, MovieId = 9 },
+                new Booking { Id = 10, CustomerId = 10, MovieId = 10 }
+
+
+                ) ;
+
+        }
+
 
   
         
         public static void Seed3(this ModelBuilder modelBuilder)
         {
             int seatNumber = 0;
+            
+
             for (int i = 1; i < 801; i++)
             {
                 seatNumber++;
                 int number = 0;
                 int showNumber = 0;
-
                 if(seatNumber == 21) { seatNumber = 1; }
 
                 if (i >= 1 && i <= 80)
@@ -161,7 +187,6 @@ namespace BackEnd
                     if (i >= 101 && i <= 120) { showNumber = 2; }
                     if (i >= 121 && i <= 140) { showNumber = 3; }
                     if (i >= 141 && i <= 180) { showNumber = 4; }
-                  
 
                 }
 
@@ -181,8 +206,6 @@ namespace BackEnd
                     if (i >= 261 && i <= 280) { showNumber = 2; }
                     if (i >= 281 && i <= 300) { showNumber = 3; }
                     if (i >= 301 && i <= 320) { showNumber = 4; }
-
-
                 }
                 if (i >= 321 && i <= 400)
                 {
@@ -233,6 +256,27 @@ namespace BackEnd
                     if (i >= 781 && i <= 800) { showNumber = 4; }
                 }
 
+                if(i == 1) { bookingId = 1; }
+                if(i == 3) { bookingId = null; }
+                if(i == 81) { bookingId = 2; }
+                if(i == 82) { bookingId = null; }
+                if(i == 161) { bookingId = 3; }
+                if(i == 163) { bookingId = null; }
+                if(i == 241) { bookingId = 4; }
+                if(i == 242) { bookingId = null; }
+                if(i == 321) { bookingId = 5; }
+                if(i == 322) { bookingId = null; }
+                if(i == 401) { bookingId = 6; }
+                if(i == 402) { bookingId = null; }
+                if(i == 481) { bookingId = 7; }
+                if(i == 482) { bookingId = null; }
+                if(i == 561) { bookingId = 8; }
+                if(i == 562) { bookingId = null; }
+                if(i == 641) { bookingId = 9; }
+                if(i == 642) { bookingId = null; }
+                if(i == 721) { bookingId = 10; }
+                if(i == 723) { bookingId = null; }
+
 
                 modelBuilder.Entity<Ticket>().HasData(
                     new Ticket
@@ -240,7 +284,7 @@ namespace BackEnd
                         Id = i,
                         RoomId = number,
                         ShowTimeId = showNumber,
-                        BookingId = null,
+                        BookingId = bookingId,
                         SeatNumber = seatNumber
 
 

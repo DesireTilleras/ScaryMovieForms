@@ -37,7 +37,7 @@ namespace BackEnd
         {
             modelBuilder.Entity<Customer>().HasIndex(c => c.PhoneNumber).IsUnique(true);
             modelBuilder.Seed();
-
+            modelBuilder.Seed2();
             modelBuilder.Seed3();
         }
     }
