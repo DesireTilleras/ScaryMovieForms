@@ -48,7 +48,7 @@ namespace ScaryMovieForms
             // 
             this.lblConfirmBookingTitle.AutoSize = true;
             this.lblConfirmBookingTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblConfirmBookingTitle.Location = new System.Drawing.Point(223, 25);
+            this.lblConfirmBookingTitle.Location = new System.Drawing.Point(215, 43);
             this.lblConfirmBookingTitle.Name = "lblConfirmBookingTitle";
             this.lblConfirmBookingTitle.Size = new System.Drawing.Size(273, 46);
             this.lblConfirmBookingTitle.TabIndex = 0;
@@ -174,6 +174,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.txtMovieTitle);
             this.Controls.Add(this.lblMovieTitle);
             this.Controls.Add(this.lblConfirmBookingTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConfirmBookingForm";
             this.Text = "ConfirmBookingForm";
             this.ResumeLayout(false);

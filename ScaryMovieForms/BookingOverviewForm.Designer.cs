@@ -40,18 +40,19 @@ namespace ScaryMovieForms
             // cklBookingList
             // 
             this.cklBookingList.FormattingEnabled = true;
-            this.cklBookingList.Location = new System.Drawing.Point(70, 154);
+            this.cklBookingList.Location = new System.Drawing.Point(31, 154);
             this.cklBookingList.Name = "cklBookingList";
-            this.cklBookingList.Size = new System.Drawing.Size(28, 180);
+            this.cklBookingList.Size = new System.Drawing.Size(28, 202);
             this.cklBookingList.TabIndex = 0;
             this.cklBookingList.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cklBookingList_ItemCheck_1);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(299, 40);
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.Location = new System.Drawing.Point(299, 68);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(153, 20);
+            this.lblTitle.Size = new System.Drawing.Size(187, 25);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Your current bookings";
             // 
@@ -89,9 +90,9 @@ namespace ScaryMovieForms
             this.lstShowBookingInfo.Enabled = false;
             this.lstShowBookingInfo.FormattingEnabled = true;
             this.lstShowBookingInfo.ItemHeight = 20;
-            this.lstShowBookingInfo.Location = new System.Drawing.Point(104, 154);
+            this.lstShowBookingInfo.Location = new System.Drawing.Point(65, 154);
             this.lstShowBookingInfo.Name = "lstShowBookingInfo";
-            this.lstShowBookingInfo.Size = new System.Drawing.Size(684, 184);
+            this.lstShowBookingInfo.Size = new System.Drawing.Size(684, 204);
             this.lstShowBookingInfo.TabIndex = 5;
             // 
             // BookingOverviewForm
@@ -105,6 +106,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.btnDeleteBooking);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.cklBookingList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookingOverviewForm";
             this.Text = "BookingOverviewForm";
             this.ResumeLayout(false);

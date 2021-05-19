@@ -61,14 +61,23 @@ namespace ScaryMovieForms
             this.btnBooked = new System.Windows.Forms.Button();
             this.btnCheckSeatList = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.picMovieImage = new System.Windows.Forms.PictureBox();
+            this.lblGreen = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblFree = new System.Windows.Forms.Label();
+            this.lblBooked = new System.Windows.Forms.Label();
+            this.lblAvailabletickets = new System.Windows.Forms.Label();
+            this.lblSeatOrientation = new System.Windows.Forms.Label();
+            this.lblScreen = new System.Windows.Forms.Label();
             this.tlpVisualizeSeats.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMovieImage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDescription
             // 
-            this.lblDescription.Location = new System.Drawing.Point(12, 98);
+            this.lblDescription.Location = new System.Drawing.Point(12, 60);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(253, 229);
+            this.lblDescription.Size = new System.Drawing.Size(167, 295);
             this.lblDescription.TabIndex = 0;
             this.lblDescription.Text = "Descripton";
             // 
@@ -127,7 +136,7 @@ namespace ScaryMovieForms
             // cklListTickets
             // 
             this.cklListTickets.FormattingEnabled = true;
-            this.cklListTickets.Location = new System.Drawing.Point(300, 98);
+            this.cklListTickets.Location = new System.Drawing.Point(373, 60);
             this.cklListTickets.Name = "cklListTickets";
             this.cklListTickets.Size = new System.Drawing.Size(125, 378);
             this.cklListTickets.TabIndex = 6;
@@ -161,14 +170,14 @@ namespace ScaryMovieForms
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat3, 2, 0);
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat2, 1, 0);
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat1, 0, 0);
-            this.tlpVisualizeSeats.Location = new System.Drawing.Point(447, 98);
+            this.tlpVisualizeSeats.Location = new System.Drawing.Point(504, 60);
             this.tlpVisualizeSeats.Name = "tlpVisualizeSeats";
             this.tlpVisualizeSeats.RowCount = 4;
             this.tlpVisualizeSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpVisualizeSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpVisualizeSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpVisualizeSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpVisualizeSeats.Size = new System.Drawing.Size(350, 285);
+            this.tlpVisualizeSeats.Size = new System.Drawing.Size(304, 254);
             this.tlpVisualizeSeats.TabIndex = 7;
             this.tlpVisualizeSeats.Visible = false;
             // 
@@ -176,10 +185,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat20.AutoSize = true;
             this.lblSeat20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat20.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat20.Location = new System.Drawing.Point(282, 213);
+            this.lblSeat20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat20.Location = new System.Drawing.Point(246, 189);
             this.lblSeat20.Name = "lblSeat20";
-            this.lblSeat20.Size = new System.Drawing.Size(62, 69);
+            this.lblSeat20.Size = new System.Drawing.Size(52, 62);
             this.lblSeat20.TabIndex = 19;
             this.lblSeat20.Text = "20";
             this.lblSeat20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,10 +197,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat19.AutoSize = true;
             this.lblSeat19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat19.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat19.Location = new System.Drawing.Point(213, 213);
+            this.lblSeat19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat19.Location = new System.Drawing.Point(186, 189);
             this.lblSeat19.Name = "lblSeat19";
-            this.lblSeat19.Size = new System.Drawing.Size(60, 69);
+            this.lblSeat19.Size = new System.Drawing.Size(51, 62);
             this.lblSeat19.TabIndex = 18;
             this.lblSeat19.Text = "19";
             this.lblSeat19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -200,10 +209,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat18.AutoSize = true;
             this.lblSeat18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat18.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat18.Location = new System.Drawing.Point(144, 213);
+            this.lblSeat18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat18.Location = new System.Drawing.Point(126, 189);
             this.lblSeat18.Name = "lblSeat18";
-            this.lblSeat18.Size = new System.Drawing.Size(60, 69);
+            this.lblSeat18.Size = new System.Drawing.Size(51, 62);
             this.lblSeat18.TabIndex = 17;
             this.lblSeat18.Text = "18";
             this.lblSeat18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -212,10 +221,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat17.AutoSize = true;
             this.lblSeat17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat17.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat17.Location = new System.Drawing.Point(75, 213);
+            this.lblSeat17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat17.Location = new System.Drawing.Point(66, 189);
             this.lblSeat17.Name = "lblSeat17";
-            this.lblSeat17.Size = new System.Drawing.Size(60, 69);
+            this.lblSeat17.Size = new System.Drawing.Size(51, 62);
             this.lblSeat17.TabIndex = 16;
             this.lblSeat17.Text = "17";
             this.lblSeat17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -224,10 +233,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat16.AutoSize = true;
             this.lblSeat16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat16.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat16.Location = new System.Drawing.Point(6, 213);
+            this.lblSeat16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat16.Location = new System.Drawing.Point(6, 189);
             this.lblSeat16.Name = "lblSeat16";
-            this.lblSeat16.Size = new System.Drawing.Size(60, 69);
+            this.lblSeat16.Size = new System.Drawing.Size(51, 62);
             this.lblSeat16.TabIndex = 15;
             this.lblSeat16.Text = "16";
             this.lblSeat16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,10 +245,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat15.AutoSize = true;
             this.lblSeat15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat15.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat15.Location = new System.Drawing.Point(282, 143);
+            this.lblSeat15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat15.Location = new System.Drawing.Point(246, 127);
             this.lblSeat15.Name = "lblSeat15";
-            this.lblSeat15.Size = new System.Drawing.Size(62, 67);
+            this.lblSeat15.Size = new System.Drawing.Size(52, 59);
             this.lblSeat15.TabIndex = 14;
             this.lblSeat15.Text = "15";
             this.lblSeat15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -248,10 +257,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat14.AutoSize = true;
             this.lblSeat14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat14.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat14.Location = new System.Drawing.Point(213, 143);
+            this.lblSeat14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat14.Location = new System.Drawing.Point(186, 127);
             this.lblSeat14.Name = "lblSeat14";
-            this.lblSeat14.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat14.Size = new System.Drawing.Size(51, 59);
             this.lblSeat14.TabIndex = 13;
             this.lblSeat14.Text = "14";
             this.lblSeat14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -260,10 +269,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat13.AutoSize = true;
             this.lblSeat13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat13.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat13.Location = new System.Drawing.Point(144, 143);
+            this.lblSeat13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat13.Location = new System.Drawing.Point(126, 127);
             this.lblSeat13.Name = "lblSeat13";
-            this.lblSeat13.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat13.Size = new System.Drawing.Size(51, 59);
             this.lblSeat13.TabIndex = 12;
             this.lblSeat13.Text = "13";
             this.lblSeat13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,10 +281,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat12.AutoSize = true;
             this.lblSeat12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat12.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat12.Location = new System.Drawing.Point(75, 143);
+            this.lblSeat12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat12.Location = new System.Drawing.Point(66, 127);
             this.lblSeat12.Name = "lblSeat12";
-            this.lblSeat12.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat12.Size = new System.Drawing.Size(51, 59);
             this.lblSeat12.TabIndex = 11;
             this.lblSeat12.Text = "12";
             this.lblSeat12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -284,10 +293,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat11.AutoSize = true;
             this.lblSeat11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat11.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat11.Location = new System.Drawing.Point(6, 143);
+            this.lblSeat11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat11.Location = new System.Drawing.Point(6, 127);
             this.lblSeat11.Name = "lblSeat11";
-            this.lblSeat11.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat11.Size = new System.Drawing.Size(51, 59);
             this.lblSeat11.TabIndex = 10;
             this.lblSeat11.Text = "11";
             this.lblSeat11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,10 +305,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat10.AutoSize = true;
             this.lblSeat10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat10.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat10.Location = new System.Drawing.Point(282, 73);
+            this.lblSeat10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat10.Location = new System.Drawing.Point(246, 65);
             this.lblSeat10.Name = "lblSeat10";
-            this.lblSeat10.Size = new System.Drawing.Size(62, 67);
+            this.lblSeat10.Size = new System.Drawing.Size(52, 59);
             this.lblSeat10.TabIndex = 9;
             this.lblSeat10.Text = "10";
             this.lblSeat10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -308,10 +317,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat9.AutoSize = true;
             this.lblSeat9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat9.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat9.Location = new System.Drawing.Point(213, 73);
+            this.lblSeat9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat9.Location = new System.Drawing.Point(186, 65);
             this.lblSeat9.Name = "lblSeat9";
-            this.lblSeat9.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat9.Size = new System.Drawing.Size(51, 59);
             this.lblSeat9.TabIndex = 8;
             this.lblSeat9.Text = "9";
             this.lblSeat9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -320,10 +329,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat8.AutoSize = true;
             this.lblSeat8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat8.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat8.Location = new System.Drawing.Point(144, 73);
+            this.lblSeat8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat8.Location = new System.Drawing.Point(126, 65);
             this.lblSeat8.Name = "lblSeat8";
-            this.lblSeat8.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat8.Size = new System.Drawing.Size(51, 59);
             this.lblSeat8.TabIndex = 7;
             this.lblSeat8.Text = "8";
             this.lblSeat8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -332,10 +341,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat7.AutoSize = true;
             this.lblSeat7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat7.Location = new System.Drawing.Point(75, 73);
+            this.lblSeat7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat7.Location = new System.Drawing.Point(66, 65);
             this.lblSeat7.Name = "lblSeat7";
-            this.lblSeat7.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat7.Size = new System.Drawing.Size(51, 59);
             this.lblSeat7.TabIndex = 6;
             this.lblSeat7.Text = "7";
             this.lblSeat7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -344,10 +353,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat6.AutoSize = true;
             this.lblSeat6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat6.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat6.Location = new System.Drawing.Point(6, 73);
+            this.lblSeat6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat6.Location = new System.Drawing.Point(6, 65);
             this.lblSeat6.Name = "lblSeat6";
-            this.lblSeat6.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat6.Size = new System.Drawing.Size(51, 59);
             this.lblSeat6.TabIndex = 5;
             this.lblSeat6.Text = "6";
             this.lblSeat6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -356,10 +365,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat5.AutoSize = true;
             this.lblSeat5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat5.Location = new System.Drawing.Point(282, 3);
+            this.lblSeat5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat5.Location = new System.Drawing.Point(246, 3);
             this.lblSeat5.Name = "lblSeat5";
-            this.lblSeat5.Size = new System.Drawing.Size(62, 67);
+            this.lblSeat5.Size = new System.Drawing.Size(52, 59);
             this.lblSeat5.TabIndex = 4;
             this.lblSeat5.Text = "5";
             this.lblSeat5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -368,10 +377,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat4.AutoSize = true;
             this.lblSeat4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat4.Location = new System.Drawing.Point(213, 3);
+            this.lblSeat4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat4.Location = new System.Drawing.Point(186, 3);
             this.lblSeat4.Name = "lblSeat4";
-            this.lblSeat4.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat4.Size = new System.Drawing.Size(51, 59);
             this.lblSeat4.TabIndex = 3;
             this.lblSeat4.Text = "4";
             this.lblSeat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -380,10 +389,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat3.AutoSize = true;
             this.lblSeat3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat3.Location = new System.Drawing.Point(144, 3);
+            this.lblSeat3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat3.Location = new System.Drawing.Point(126, 3);
             this.lblSeat3.Name = "lblSeat3";
-            this.lblSeat3.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat3.Size = new System.Drawing.Size(51, 59);
             this.lblSeat3.TabIndex = 2;
             this.lblSeat3.Text = "3";
             this.lblSeat3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -392,10 +401,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat2.AutoSize = true;
             this.lblSeat2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSeat2.Location = new System.Drawing.Point(75, 3);
+            this.lblSeat2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat2.Location = new System.Drawing.Point(66, 3);
             this.lblSeat2.Name = "lblSeat2";
-            this.lblSeat2.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat2.Size = new System.Drawing.Size(51, 59);
             this.lblSeat2.TabIndex = 1;
             this.lblSeat2.Text = "2";
             this.lblSeat2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -404,10 +413,10 @@ namespace ScaryMovieForms
             // 
             this.lblSeat1.AutoSize = true;
             this.lblSeat1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSeat1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSeat1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSeat1.Location = new System.Drawing.Point(6, 3);
             this.lblSeat1.Name = "lblSeat1";
-            this.lblSeat1.Size = new System.Drawing.Size(60, 67);
+            this.lblSeat1.Size = new System.Drawing.Size(51, 59);
             this.lblSeat1.TabIndex = 0;
             this.lblSeat1.Text = "1";
             this.lblSeat1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -443,11 +452,89 @@ namespace ScaryMovieForms
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // picMovieImage
+            // 
+            this.picMovieImage.Location = new System.Drawing.Point(185, 63);
+            this.picMovieImage.Name = "picMovieImage";
+            this.picMovieImage.Size = new System.Drawing.Size(160, 205);
+            this.picMovieImage.TabIndex = 11;
+            this.picMovieImage.TabStop = false;
+            // 
+            // lblGreen
+            // 
+            this.lblGreen.BackColor = System.Drawing.Color.LightGreen;
+            this.lblGreen.Location = new System.Drawing.Point(571, 349);
+            this.lblGreen.Name = "lblGreen";
+            this.lblGreen.Size = new System.Drawing.Size(40, 33);
+            this.lblGreen.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.LightCoral;
+            this.label1.Location = new System.Drawing.Point(571, 395);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 33);
+            this.label1.TabIndex = 13;
+            // 
+            // lblFree
+            // 
+            this.lblFree.AutoSize = true;
+            this.lblFree.Location = new System.Drawing.Point(630, 358);
+            this.lblFree.Name = "lblFree";
+            this.lblFree.Size = new System.Drawing.Size(108, 20);
+            this.lblFree.TabIndex = 14;
+            this.lblFree.Text = "Available seats";
+            // 
+            // lblBooked
+            // 
+            this.lblBooked.AutoSize = true;
+            this.lblBooked.Location = new System.Drawing.Point(633, 404);
+            this.lblBooked.Name = "lblBooked";
+            this.lblBooked.Size = new System.Drawing.Size(60, 20);
+            this.lblBooked.TabIndex = 15;
+            this.lblBooked.Text = "Booked";
+            // 
+            // lblAvailabletickets
+            // 
+            this.lblAvailabletickets.AutoSize = true;
+            this.lblAvailabletickets.Location = new System.Drawing.Point(373, 37);
+            this.lblAvailabletickets.Name = "lblAvailabletickets";
+            this.lblAvailabletickets.Size = new System.Drawing.Size(104, 20);
+            this.lblAvailabletickets.TabIndex = 16;
+            this.lblAvailabletickets.Text = "Choose tickets";
+            // 
+            // lblSeatOrientation
+            // 
+            this.lblSeatOrientation.AutoSize = true;
+            this.lblSeatOrientation.Location = new System.Drawing.Point(504, 37);
+            this.lblSeatOrientation.Name = "lblSeatOrientation";
+            this.lblSeatOrientation.Size = new System.Drawing.Size(44, 20);
+            this.lblSeatOrientation.TabIndex = 17;
+            this.lblSeatOrientation.Text = "Seats";
+            // 
+            // lblScreen
+            // 
+            this.lblScreen.AutoSize = true;
+            this.lblScreen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblScreen.Location = new System.Drawing.Point(611, 9);
+            this.lblScreen.Name = "lblScreen";
+            this.lblScreen.Size = new System.Drawing.Size(70, 28);
+            this.lblScreen.TabIndex = 18;
+            this.lblScreen.Text = "Screen";
+            // 
             // MovieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 531);
+            this.Controls.Add(this.lblScreen);
+            this.Controls.Add(this.lblSeatOrientation);
+            this.Controls.Add(this.lblAvailabletickets);
+            this.Controls.Add(this.lblBooked);
+            this.Controls.Add(this.lblFree);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblGreen);
+            this.Controls.Add(this.picMovieImage);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnCheckSeatList);
             this.Controls.Add(this.btnBooked);
@@ -459,10 +546,12 @@ namespace ScaryMovieForms
             this.Controls.Add(this.rdoShow1);
             this.Controls.Add(this.lblMovieTitle);
             this.Controls.Add(this.lblDescription);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MovieForm";
             this.Text = "MovieForm";
             this.tlpVisualizeSeats.ResumeLayout(false);
             this.tlpVisualizeSeats.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMovieImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,5 +591,13 @@ namespace ScaryMovieForms
         private System.Windows.Forms.Button btnBooked;
         private System.Windows.Forms.Button btnCheckSeatList;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox picMovieImage;
+        private System.Windows.Forms.Label lblGreen;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFree;
+        private System.Windows.Forms.Label lblBooked;
+        private System.Windows.Forms.Label lblAvailabletickets;
+        private System.Windows.Forms.Label lblSeatOrientation;
+        private System.Windows.Forms.Label lblScreen;
     }
 }

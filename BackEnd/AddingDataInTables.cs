@@ -22,7 +22,8 @@ namespace BackEnd
                        Description = "After her last encounter," +
                    " Ellen Ripley crash-lands on Fiorina 161, a maximum security prison. When a series" +
                    " of strange and deadly events occur shortly after her arrival, Ripley realizes that " +
-                   "she has brought along an unwelcome visitor"
+                   "she has brought along an unwelcome visitor",
+                       FilePath = @"Alien.jpg"
                    },
                    new Movie
                    {
@@ -30,7 +31,8 @@ namespace BackEnd
                        Title = "Halloween",
                        Description = "Laurie Strode confronts her " +
                    "long-time foe Michael Myers, the masked figure who has haunted her since she narrowly " +
-                   "escaped his killing spree on Halloween night four decades ago."
+                   "escaped his killing spree on Halloween night four decades ago.",
+                       FilePath = @"Halloween.jpg"
                    },
                    new Movie
                    {
@@ -38,14 +40,16 @@ namespace BackEnd
                        Title = "IT",
                        Description = "In the summer of 1989, a group of bullied" +
                    " kids band together to destroy a shape-shifting monster, which disguises itself as a " +
-                   "clown and preys on the children of Derry, their small Maine town."
+                   "clown and preys on the children of Derry, their small Maine town.",
+                       FilePath = @"IT.jpg"
                    },
                    new Movie
                    {
                        Id = 4,
                        Title = "Poltergeist",
                        Description = "A family's home is haunted " +
-                   "by a host of demonic ghosts."
+                   "by a host of demonic ghosts.",
+                       FilePath = @"Poltergeist.jpg"
                    },
                    new Movie
                    {
@@ -53,7 +57,8 @@ namespace BackEnd
                        Title = "Saw",
                        Description = "Two strangers awaken in a room with no" +
                    " recollection of how they got there, and soon discover they're pawns in a deadly game" +
-                   " perpetrated by a notorious serial killer."
+                   " perpetrated by a notorious serial killer.",
+                       FilePath = @"Saw.jpg"
                    },
                    new Movie
                    {
@@ -61,14 +66,16 @@ namespace BackEnd
                        Title = "Scream",
                        Description = "A year after the murder of her mother, " +
                    "a teenage girl is terrorized by a new killer, who targets the girl and her friends by using" +
-                   " horror films as part of a deadly game."
+                   " horror films as part of a deadly game.",
+                       FilePath = @"Scream.jpg"
                    },
                    new Movie
                    {
                        Id = 7,
                        Title = "The Exorcist",
                        Description = "When a 12-year-old girl is possessed" +
-                   " by a mysterious entity, her mother seeks the help of two priests to save her."
+                   " by a mysterious entity, her mother seeks the help of two priests to save her.",
+                       FilePath = @"TheExorcist.jpg"
                    },
                    new Movie
                    {
@@ -76,22 +83,25 @@ namespace BackEnd
                        Title = "The Grudge",
                        Description = "An American nurse living and working" +
                    " in Tokyo is exposed to a mysterious supernatural curse, one that locks a person in a " +
-                   "powerful rage before claiming their life and spreading to another victim."
+                   "powerful rage before claiming their life and spreading to another victim.",
+                       FilePath = @"TheGrudge.jpg"
                    },
                    new Movie
                    {
                        Id = 9,
                        Title = "The Ring",
                        Description = "A journalist must investigate a mysterious " +
-                   "videotape which seems to cause the death of anyone one week to the day after they view it."
+                   "videotape which seems to cause the death of anyone one week to the day after they view it.",
+                       FilePath = @"TheRing.jpg"
                    },
                    new Movie
                    {
                        Id = 10,
                        Title = "The Witch",
                        Description = "A family in 1630s New England is torn " +
-                   "apart by the forces of witchcraft, black magic, and possession."
-                   });
+                   "apart by the forces of witchcraft, black magic, and possession.",
+                       FilePath = @"TheWitch.jpg"
+                   }) ;
 
             for (int i = 1; i < 11; i++)
             {

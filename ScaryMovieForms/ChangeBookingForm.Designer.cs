@@ -73,7 +73,7 @@ namespace ScaryMovieForms
             // lblChangeBooking
             // 
             this.lblChangeBooking.AutoSize = true;
-            this.lblChangeBooking.Location = new System.Drawing.Point(293, 9);
+            this.lblChangeBooking.Location = new System.Drawing.Point(295, 9);
             this.lblChangeBooking.Name = "lblChangeBooking";
             this.lblChangeBooking.Size = new System.Drawing.Size(118, 20);
             this.lblChangeBooking.TabIndex = 0;
@@ -547,6 +547,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.lblMovieTitle);
             this.Controls.Add(this.lblChangeBooking);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChangeBookingForm";
             this.Text = "ChangeBookingForm";
             this.Load += new System.EventHandler(this.ChangeBookingForm_Load);

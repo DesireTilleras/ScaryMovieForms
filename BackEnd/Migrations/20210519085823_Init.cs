@@ -2,7 +2,7 @@
 
 namespace BackEnd.Migrations
 {
-    public partial class init : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,7 +28,8 @@ namespace BackEnd.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FilePath = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -135,19 +136,19 @@ namespace BackEnd.Migrations
 
             migrationBuilder.InsertData(
                 table: "Movies",
-                columns: new[] { "Id", "Description", "Title" },
+                columns: new[] { "Id", "Description", "FilePath", "Title" },
                 values: new object[,]
                 {
-                    { 9, "A journalist must investigate a mysterious videotape which seems to cause the death of anyone one week to the day after they view it.", "The Ring" },
-                    { 8, "An American nurse living and working in Tokyo is exposed to a mysterious supernatural curse, one that locks a person in a powerful rage before claiming their life and spreading to another victim.", "The Grudge" },
-                    { 7, "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her.", "The Exorcist" },
-                    { 6, "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.", "Scream" },
-                    { 10, "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession.", "The Witch" },
-                    { 4, "A family's home is haunted by a host of demonic ghosts.", "Poltergeist" },
-                    { 3, "In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.", "IT" },
-                    { 2, "Laurie Strode confronts her long-time foe Michael Myers, the masked figure who has haunted her since she narrowly escaped his killing spree on Halloween night four decades ago.", "Halloween" },
-                    { 1, "After her last encounter, Ellen Ripley crash-lands on Fiorina 161, a maximum security prison. When a series of strange and deadly events occur shortly after her arrival, Ripley realizes that she has brought along an unwelcome visitor", "Alien" },
-                    { 5, "Two strangers awaken in a room with no recollection of how they got there, and soon discover they're pawns in a deadly game perpetrated by a notorious serial killer.", "Saw" }
+                    { 9, "A journalist must investigate a mysterious videotape which seems to cause the death of anyone one week to the day after they view it.", "TheRing.jpg", "The Ring" },
+                    { 8, "An American nurse living and working in Tokyo is exposed to a mysterious supernatural curse, one that locks a person in a powerful rage before claiming their life and spreading to another victim.", "TheGrudge.jpg", "The Grudge" },
+                    { 7, "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her.", "TheExorcist.jpg", "The Exorcist" },
+                    { 6, "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.", "Scream.jpg", "Scream" },
+                    { 10, "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession.", "TheWitch.jpg", "The Witch" },
+                    { 4, "A family's home is haunted by a host of demonic ghosts.", "Poltergeist.jpg", "Poltergeist" },
+                    { 3, "In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.", "IT.jpg", "IT" },
+                    { 2, "Laurie Strode confronts her long-time foe Michael Myers, the masked figure who has haunted her since she narrowly escaped his killing spree on Halloween night four decades ago.", "Halloween.jpg", "Halloween" },
+                    { 1, "After her last encounter, Ellen Ripley crash-lands on Fiorina 161, a maximum security prison. When a series of strange and deadly events occur shortly after her arrival, Ripley realizes that she has brought along an unwelcome visitor", "Alien.jpg", "Alien" },
+                    { 5, "Two strangers awaken in a room with no recollection of how they got there, and soon discover they're pawns in a deadly game perpetrated by a notorious serial killer.", "Saw.jpg", "Saw" }
                 });
 
             migrationBuilder.InsertData(

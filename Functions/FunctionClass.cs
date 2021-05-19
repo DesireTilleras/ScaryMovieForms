@@ -425,6 +425,17 @@ namespace Functions
             }
         }
 
+        public string GetMovieImagePath(int movieId)
+        {
+            using (var movieContext = new MovieAppContext())
+            {
+                var moviePath = movieContext.Movies.First(movie => movie.Id == movieId).FilePath;
+
+                return moviePath;
+            }
+
+            
+        }
 
     }
 }

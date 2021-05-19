@@ -369,6 +369,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.rdoRamp);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.tlpMainMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenuForm";
             this.Text = "Form1";
             this.tlpMainMenu.ResumeLayout(false);

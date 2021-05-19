@@ -81,6 +81,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.btnShowBookings);
             this.Controls.Add(this.txtPhoneNumberBookings);
             this.Controls.Add(this.lblPhoneNumber);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShowBookingsEnterNumberForm";
             this.Text = "ShowBookingsEnterNumberForm";
             this.ResumeLayout(false);

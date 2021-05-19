@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackEnd.Migrations
 {
     [DbContext(typeof(MovieAppContext))]
-    [Migration("20210519064517_init")]
-    partial class init
+    [Migration("20210519085823_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -134,6 +134,9 @@ namespace BackEnd.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FilePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
@@ -146,60 +149,70 @@ namespace BackEnd.Migrations
                         {
                             Id = 1,
                             Description = "After her last encounter, Ellen Ripley crash-lands on Fiorina 161, a maximum security prison. When a series of strange and deadly events occur shortly after her arrival, Ripley realizes that she has brought along an unwelcome visitor",
+                            FilePath = "Alien.jpg",
                             Title = "Alien"
                         },
                         new
                         {
                             Id = 2,
                             Description = "Laurie Strode confronts her long-time foe Michael Myers, the masked figure who has haunted her since she narrowly escaped his killing spree on Halloween night four decades ago.",
+                            FilePath = "Halloween.jpg",
                             Title = "Halloween"
                         },
                         new
                         {
                             Id = 3,
                             Description = "In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.",
+                            FilePath = "IT.jpg",
                             Title = "IT"
                         },
                         new
                         {
                             Id = 4,
                             Description = "A family's home is haunted by a host of demonic ghosts.",
+                            FilePath = "Poltergeist.jpg",
                             Title = "Poltergeist"
                         },
                         new
                         {
                             Id = 5,
                             Description = "Two strangers awaken in a room with no recollection of how they got there, and soon discover they're pawns in a deadly game perpetrated by a notorious serial killer.",
+                            FilePath = "Saw.jpg",
                             Title = "Saw"
                         },
                         new
                         {
                             Id = 6,
                             Description = "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.",
+                            FilePath = "Scream.jpg",
                             Title = "Scream"
                         },
                         new
                         {
                             Id = 7,
                             Description = "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her.",
+                            FilePath = "TheExorcist.jpg",
                             Title = "The Exorcist"
                         },
                         new
                         {
                             Id = 8,
                             Description = "An American nurse living and working in Tokyo is exposed to a mysterious supernatural curse, one that locks a person in a powerful rage before claiming their life and spreading to another victim.",
+                            FilePath = "TheGrudge.jpg",
                             Title = "The Grudge"
                         },
                         new
                         {
                             Id = 9,
                             Description = "A journalist must investigate a mysterious videotape which seems to cause the death of anyone one week to the day after they view it.",
+                            FilePath = "TheRing.jpg",
                             Title = "The Ring"
                         },
                         new
                         {
                             Id = 10,
                             Description = "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession.",
+                            FilePath = "TheWitch.jpg",
                             Title = "The Witch"
                         });
                 });

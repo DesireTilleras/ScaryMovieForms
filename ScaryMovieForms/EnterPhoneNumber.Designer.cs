@@ -38,7 +38,7 @@ namespace ScaryMovieForms
             // lblTextToContinue
             // 
             this.lblTextToContinue.AutoSize = true;
-            this.lblTextToContinue.Location = new System.Drawing.Point(26, 100);
+            this.lblTextToContinue.Location = new System.Drawing.Point(12, 155);
             this.lblTextToContinue.Name = "lblTextToContinue";
             this.lblTextToContinue.Size = new System.Drawing.Size(307, 20);
             this.lblTextToContinue.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace ScaryMovieForms
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(349, 97);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(340, 152);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(190, 27);
             this.txtPhoneNumber.TabIndex = 1;
@@ -81,6 +81,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.lblTextToContinue);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EnterPhoneNumber";
             this.Text = "EnterPhoneNumber";
             this.ResumeLayout(false);
