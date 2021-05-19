@@ -38,15 +38,16 @@ namespace ScaryMovieForms
             // lblTextToContinue
             // 
             this.lblTextToContinue.AutoSize = true;
-            this.lblTextToContinue.Location = new System.Drawing.Point(12, 155);
+            this.lblTextToContinue.BackColor = System.Drawing.Color.White;
+            this.lblTextToContinue.Location = new System.Drawing.Point(12, 181);
             this.lblTextToContinue.Name = "lblTextToContinue";
-            this.lblTextToContinue.Size = new System.Drawing.Size(307, 20);
+            this.lblTextToContinue.Size = new System.Drawing.Size(311, 20);
             this.lblTextToContinue.TabIndex = 0;
-            this.lblTextToContinue.Text = "To continue, please enter your Phone number";
+            this.lblTextToContinue.Text = "To continue, please enter your phone number:";
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(340, 152);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(340, 178);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(190, 27);
             this.txtPhoneNumber.TabIndex = 1;
@@ -76,6 +77,7 @@ namespace ScaryMovieForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod;
             this.ClientSize = new System.Drawing.Size(561, 393);
             this.Controls.Add(this.btnBackToMenu);
             this.Controls.Add(this.btnNext);

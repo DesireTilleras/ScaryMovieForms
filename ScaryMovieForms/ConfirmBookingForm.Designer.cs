@@ -47,17 +47,20 @@ namespace ScaryMovieForms
             // lblConfirmBookingTitle
             // 
             this.lblConfirmBookingTitle.AutoSize = true;
-            this.lblConfirmBookingTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblConfirmBookingTitle.Location = new System.Drawing.Point(215, 43);
+            this.lblConfirmBookingTitle.BackColor = System.Drawing.Color.White;
+            this.lblConfirmBookingTitle.Font = new System.Drawing.Font("Chiller", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblConfirmBookingTitle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblConfirmBookingTitle.Location = new System.Drawing.Point(215, 122);
             this.lblConfirmBookingTitle.Name = "lblConfirmBookingTitle";
-            this.lblConfirmBookingTitle.Size = new System.Drawing.Size(273, 46);
+            this.lblConfirmBookingTitle.Size = new System.Drawing.Size(239, 50);
             this.lblConfirmBookingTitle.TabIndex = 0;
             this.lblConfirmBookingTitle.Text = "Confirm booking";
             // 
             // lblMovieTitle
             // 
             this.lblMovieTitle.AutoSize = true;
-            this.lblMovieTitle.Location = new System.Drawing.Point(47, 136);
+            this.lblMovieTitle.BackColor = System.Drawing.Color.White;
+            this.lblMovieTitle.Location = new System.Drawing.Point(53, 233);
             this.lblMovieTitle.Name = "lblMovieTitle";
             this.lblMovieTitle.Size = new System.Drawing.Size(83, 20);
             this.lblMovieTitle.TabIndex = 1;
@@ -65,7 +68,7 @@ namespace ScaryMovieForms
             // 
             // txtMovieTitle
             // 
-            this.txtMovieTitle.Location = new System.Drawing.Point(157, 129);
+            this.txtMovieTitle.Location = new System.Drawing.Point(157, 230);
             this.txtMovieTitle.Name = "txtMovieTitle";
             this.txtMovieTitle.Size = new System.Drawing.Size(213, 27);
             this.txtMovieTitle.TabIndex = 2;
@@ -73,7 +76,8 @@ namespace ScaryMovieForms
             // lblShowTime
             // 
             this.lblShowTime.AutoSize = true;
-            this.lblShowTime.Location = new System.Drawing.Point(47, 183);
+            this.lblShowTime.BackColor = System.Drawing.Color.White;
+            this.lblShowTime.Location = new System.Drawing.Point(53, 276);
             this.lblShowTime.Name = "lblShowTime";
             this.lblShowTime.Size = new System.Drawing.Size(82, 20);
             this.lblShowTime.TabIndex = 3;
@@ -81,7 +85,7 @@ namespace ScaryMovieForms
             // 
             // txtShowTime
             // 
-            this.txtShowTime.Location = new System.Drawing.Point(157, 183);
+            this.txtShowTime.Location = new System.Drawing.Point(157, 273);
             this.txtShowTime.Name = "txtShowTime";
             this.txtShowTime.Size = new System.Drawing.Size(213, 27);
             this.txtShowTime.TabIndex = 4;
@@ -89,17 +93,18 @@ namespace ScaryMovieForms
             // lblListOfTickets
             // 
             this.lblListOfTickets.AutoSize = true;
-            this.lblListOfTickets.Location = new System.Drawing.Point(47, 232);
+            this.lblListOfTickets.BackColor = System.Drawing.Color.White;
+            this.lblListOfTickets.Location = new System.Drawing.Point(53, 315);
             this.lblListOfTickets.Name = "lblListOfTickets";
-            this.lblListOfTickets.Size = new System.Drawing.Size(98, 20);
+            this.lblListOfTickets.Size = new System.Drawing.Size(96, 20);
             this.lblListOfTickets.TabIndex = 5;
-            this.lblListOfTickets.Text = "List of tickets:";
+            this.lblListOfTickets.Text = "Seat number:";
             // 
             // lstListOfTickets
             // 
             this.lstListOfTickets.FormattingEnabled = true;
             this.lstListOfTickets.ItemHeight = 20;
-            this.lstListOfTickets.Location = new System.Drawing.Point(157, 232);
+            this.lstListOfTickets.Location = new System.Drawing.Point(157, 315);
             this.lstListOfTickets.Name = "lstListOfTickets";
             this.lstListOfTickets.Size = new System.Drawing.Size(150, 104);
             this.lstListOfTickets.TabIndex = 6;
@@ -107,7 +112,8 @@ namespace ScaryMovieForms
             // lblCustomerFirstName
             // 
             this.lblCustomerFirstName.AutoSize = true;
-            this.lblCustomerFirstName.Location = new System.Drawing.Point(422, 129);
+            this.lblCustomerFirstName.BackColor = System.Drawing.Color.White;
+            this.lblCustomerFirstName.Location = new System.Drawing.Point(408, 236);
             this.lblCustomerFirstName.Name = "lblCustomerFirstName";
             this.lblCustomerFirstName.Size = new System.Drawing.Size(80, 20);
             this.lblCustomerFirstName.TabIndex = 7;
@@ -116,7 +122,8 @@ namespace ScaryMovieForms
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(422, 190);
+            this.lblLastName.BackColor = System.Drawing.Color.White;
+            this.lblLastName.Location = new System.Drawing.Point(409, 276);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(79, 20);
             this.lblLastName.TabIndex = 8;
@@ -124,25 +131,25 @@ namespace ScaryMovieForms
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(536, 129);
+            this.txtFirstName.Location = new System.Drawing.Point(516, 233);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(178, 27);
             this.txtFirstName.TabIndex = 9;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(536, 190);
+            this.txtLastName.Location = new System.Drawing.Point(516, 273);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(178, 27);
             this.txtLastName.TabIndex = 10;
             // 
             // btnBook
             // 
-            this.btnBook.Location = new System.Drawing.Point(620, 425);
+            this.btnBook.Location = new System.Drawing.Point(559, 425);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(94, 29);
+            this.btnBook.Size = new System.Drawing.Size(155, 29);
             this.btnBook.TabIndex = 11;
-            this.btnBook.Text = "Book";
+            this.btnBook.Text = "Confirm booking";
             this.btnBook.UseVisualStyleBackColor = true;
             this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
@@ -160,6 +167,7 @@ namespace ScaryMovieForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod1;
             this.ClientSize = new System.Drawing.Size(729, 466);
             this.Controls.Add(this.btnGoBackMaenu);
             this.Controls.Add(this.btnBook);

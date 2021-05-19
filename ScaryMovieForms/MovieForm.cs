@@ -55,31 +55,10 @@ namespace ScaryMovieForms
 
         private void rdoShow1_CheckedChanged(object sender, EventArgs e)
         {
-            ResetColorOnSeat();
-
-           int choice = MainMenuForm.MovieChoice;
-            cklListTickets.Items.Clear();
-
             showTime = 1;
 
-            tlpVisualizeSeats.Visible = true;
-            lblFree.Visible = true;
-            lblBooked.Visible = true;
-            lblGreen.Visible = true;
-            lblRed.Visible = true;
+            ShowCorrectTicketList(showTime);
 
-            foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
-            {
-                
-                if (ticket.BookingId == null)
-                {
-                  
-                    cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
-                }
-            }
-
-            SetColorOnSeat(cklListTickets.Items);
-           
         }
 
         private void btnBooked_Click(object sender, EventArgs e)
@@ -112,81 +91,24 @@ namespace ScaryMovieForms
 
         private void rdoShow2_CheckedChanged(object sender, EventArgs e)
         {
-            ResetColorOnSeat();
-            int choice = MainMenuForm.MovieChoice;
-
-            cklListTickets.Items.Clear();
 
             showTime = 2;
 
-            tlpVisualizeSeats.Visible = true;
-            lblFree.Visible = true;
-            lblBooked.Visible = true;
-            lblGreen.Visible = true;
-            lblRed.Visible = true;
-
-            foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
-            {
-
-                if (ticket.BookingId == null)
-                {
-
-                    cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
-                }
-            }
-            SetColorOnSeat(cklListTickets.Items);
+            ShowCorrectTicketList(showTime);
         }
 
         private void rdoShow3_CheckedChanged(object sender, EventArgs e)
         {
-            ResetColorOnSeat();
-            int choice = MainMenuForm.MovieChoice;
-            cklListTickets.Items.Clear();
-
             showTime = 3;
 
-            tlpVisualizeSeats.Visible = true;
-            lblFree.Visible = true;
-            lblBooked.Visible = true;
-            lblGreen.Visible = true;
-            lblRed.Visible = true;
-
-            foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
-            {
-
-                if (ticket.BookingId == null)
-                {
-
-                    cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
-                }
-            }
-            SetColorOnSeat(cklListTickets.Items);
+            ShowCorrectTicketList(showTime);
         }
 
         private void rdoShow4_CheckedChanged(object sender, EventArgs e)
         {
-            ResetColorOnSeat();
-            int choice = MainMenuForm.MovieChoice;
-            cklListTickets.Items.Clear();
-
             showTime = 4;
 
-            tlpVisualizeSeats.Visible = true;
-            lblFree.Visible = true;
-            lblBooked.Visible = true;
-            lblGreen.Visible = true;
-            lblRed.Visible = true;
-
-            foreach (var ticket in HelperClass.functions.ListTickets(choice, showTime))
-            {
-
-                if (ticket.BookingId == null)
-                {
-
-                    cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
-                }
-            }
-            SetColorOnSeat(cklListTickets.Items);
+            ShowCorrectTicketList(showTime);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -197,7 +119,7 @@ namespace ScaryMovieForms
             mainMenu.Show();
         }
 
-        public void SetColorOnSeat(CheckedListBox.ObjectCollection items)
+        private void SetColorOnSeat(CheckedListBox.ObjectCollection items)
         {
             foreach (var ticket in items)
             {
@@ -210,14 +132,14 @@ namespace ScaryMovieForms
                 }
             }
         }
-        public void ResetColorOnSeat()
+        private void ResetColorOnSeat()
         {
             foreach (var label in labels)
             {
                 label.BackColor = Color.LightCoral;
             }
         }
-        public void SetColorOnChoice(CheckedListBox.CheckedItemCollection items)
+        private void SetColorOnChoice(CheckedListBox.CheckedItemCollection items)
         {
             foreach (var ticket in items)
             {
@@ -230,8 +152,6 @@ namespace ScaryMovieForms
                 }
             }
         }
-
-
         private void cklListTickets_SelectedIndexChanged(object sender, EventArgs e)
         {
             foreach (var item in cklListTickets.Items)
@@ -260,6 +180,33 @@ namespace ScaryMovieForms
 
 
 
+        }
+
+        private void ShowCorrectTicketList(int showNumber)
+        {
+            ResetColorOnSeat();
+
+            int choice = MainMenuForm.MovieChoice;
+            cklListTickets.Items.Clear();
+            tlpVisualizeSeats.Visible = true;
+            lblFree.Visible = true;
+            lblChoice.Visible = true;
+            lblSalmon.Visible = true;
+            lblBooked.Visible = true;
+            lblGreen.Visible = true;
+            lblRed.Visible = true;
+
+            foreach (var ticket in HelperClass.functions.ListTickets(choice, showNumber))
+            {
+
+                if (ticket.BookingId == null)
+                {
+
+                    cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
+                }
+            }
+
+            SetColorOnSeat(cklListTickets.Items);
         }
     }
 }

@@ -43,7 +43,8 @@ namespace ScaryMovieForms
             // lblPhoneNumber
             // 
             this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(182, 119);
+            this.lblPhoneNumber.BackColor = System.Drawing.Color.White;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(153, 168);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(108, 20);
             this.lblPhoneNumber.TabIndex = 0;
@@ -52,7 +53,8 @@ namespace ScaryMovieForms
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(182, 168);
+            this.lblFirstName.BackColor = System.Drawing.Color.White;
+            this.lblFirstName.Location = new System.Drawing.Point(181, 216);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(80, 20);
             this.lblFirstName.TabIndex = 1;
@@ -61,7 +63,8 @@ namespace ScaryMovieForms
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(182, 218);
+            this.lblLastName.BackColor = System.Drawing.Color.White;
+            this.lblLastName.Location = new System.Drawing.Point(182, 266);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(79, 20);
             this.lblLastName.TabIndex = 2;
@@ -69,7 +72,7 @@ namespace ScaryMovieForms
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(312, 116);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(280, 168);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.ReadOnly = true;
             this.txtPhoneNumber.Size = new System.Drawing.Size(176, 27);
@@ -77,7 +80,7 @@ namespace ScaryMovieForms
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(312, 168);
+            this.txtFirstName.Location = new System.Drawing.Point(280, 213);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(176, 27);
             this.txtFirstName.TabIndex = 4;
@@ -85,7 +88,7 @@ namespace ScaryMovieForms
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(312, 218);
+            this.txtLastName.Location = new System.Drawing.Point(280, 263);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(176, 27);
             this.txtLastName.TabIndex = 5;
@@ -94,9 +97,11 @@ namespace ScaryMovieForms
             // lblNewCustomer
             // 
             this.lblNewCustomer.AutoSize = true;
-            this.lblNewCustomer.Location = new System.Drawing.Point(312, 19);
+            this.lblNewCustomer.BackColor = System.Drawing.Color.White;
+            this.lblNewCustomer.Font = new System.Drawing.Font("Chiller", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNewCustomer.Location = new System.Drawing.Point(264, 95);
             this.lblNewCustomer.Name = "lblNewCustomer";
-            this.lblNewCustomer.Size = new System.Drawing.Size(104, 20);
+            this.lblNewCustomer.Size = new System.Drawing.Size(210, 50);
             this.lblNewCustomer.TabIndex = 6;
             this.lblNewCustomer.Text = "New customer";
             // 
@@ -124,7 +129,10 @@ namespace ScaryMovieForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 401);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(703, 404);
             this.Controls.Add(this.btnGoToMenu);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblNewCustomer);

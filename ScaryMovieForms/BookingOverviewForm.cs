@@ -24,12 +24,15 @@ namespace ScaryMovieForms
         {
             InitializeComponent();
 
+          
             foreach (var booking in HelperClass.functions.ListOfCustomerBookings(ShowBookingsEnterNumberForm.phoneNumberBookings))
             {
                 
                 string line = $"Movie title: {HelperClass.functions.GetMovieTitle(booking.MovieId)}    Amount of seats: " +
                     $"{HelperClass.functions.AmountOfTicketOneBooking(booking.Id)}" +
                     $"    Time : {HelperClass.functions.DisplayShowTimeInOverview(booking.Id)}   Bokking ID : {booking.Id}";
+
+                lblCustomerName.Text = HelperClass.functions.GetCustomerName(booking.Id);
 
                 cklBookingList.Items.Add(booking.Id.ToString(), CheckState.Unchecked);
 

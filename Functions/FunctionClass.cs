@@ -33,6 +33,21 @@ namespace Functions
                 return customer;
             }
         }
+
+        public string GetCustomerName(int bookingId)
+        {
+            using (var movieContext = new MovieAppContext())
+            {
+                var customerId = movieContext.Bookings.First(booking => booking.Id == bookingId).CustomerId;
+
+                var firstName = movieContext.Customers.First(customer => customer.Id == customerId).FirstName;
+                var lastName = movieContext.Customers.First(customer => customer.Id == customerId).LastName;
+
+                var name = firstName + " " + lastName;
+
+                return name;
+            }
+        }
         public int GetMovieId(string movieTitle)
         {
             using (var movieContext = new MovieAppContext())

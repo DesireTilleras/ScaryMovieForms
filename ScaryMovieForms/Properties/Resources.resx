@@ -139,6 +139,9 @@
   <data name="Scream" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Bilder\Scream.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="blod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\net5.0-windows\blod.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TheExorcist" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Bilder\TheExorcist.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,7 +151,7 @@
   <data name="TheGrudge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Bilder\TheGrudge.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="blod1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\net5.0-windows\blod.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

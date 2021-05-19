@@ -83,6 +83,16 @@ namespace ScaryMovieForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blod1 {
+            get {
+                object obj = ResourceManager.GetObject("blod1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Halloween {
             get {
                 object obj = ResourceManager.GetObject("Halloween", resourceCulture);
