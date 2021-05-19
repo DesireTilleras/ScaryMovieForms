@@ -136,6 +136,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.lblPhoneNumber);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewCustomerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewCustomerForm";
             this.ResumeLayout(false);
             this.PerformLayout();

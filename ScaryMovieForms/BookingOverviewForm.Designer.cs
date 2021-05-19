@@ -109,6 +109,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.cklBookingList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookingOverviewForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BookingOverviewForm";
             this.ResumeLayout(false);
             this.PerformLayout();

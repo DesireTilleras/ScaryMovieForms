@@ -99,52 +99,72 @@ namespace ScaryMovieForms
             // lblMovieName10
             // 
             this.lblMovieName10.AutoSize = true;
+            this.lblMovieName10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName10.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName10.ForeColor = System.Drawing.Color.White;
             this.lblMovieName10.Location = new System.Drawing.Point(711, 409);
             this.lblMovieName10.Name = "lblMovieName10";
             this.lblMovieName10.Size = new System.Drawing.Size(172, 46);
             this.lblMovieName10.TabIndex = 20;
             this.lblMovieName10.Text = "The Witch";
+            this.lblMovieName10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMovieName9
             // 
             this.lblMovieName9.AutoSize = true;
+            this.lblMovieName9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName9.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName9.ForeColor = System.Drawing.Color.White;
             this.lblMovieName9.Location = new System.Drawing.Point(534, 409);
             this.lblMovieName9.Name = "lblMovieName9";
             this.lblMovieName9.Size = new System.Drawing.Size(171, 46);
             this.lblMovieName9.TabIndex = 19;
             this.lblMovieName9.Text = "The Ring";
+            this.lblMovieName9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMovieName8
             // 
             this.lblMovieName8.AutoSize = true;
+            this.lblMovieName8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName8.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName8.ForeColor = System.Drawing.Color.White;
             this.lblMovieName8.Location = new System.Drawing.Point(357, 409);
             this.lblMovieName8.Name = "lblMovieName8";
             this.lblMovieName8.Size = new System.Drawing.Size(171, 46);
             this.lblMovieName8.TabIndex = 18;
             this.lblMovieName8.Text = "The Grudge";
+            this.lblMovieName8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMovieName7
             // 
             this.lblMovieName7.AutoSize = true;
+            this.lblMovieName7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName7.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName7.ForeColor = System.Drawing.Color.White;
             this.lblMovieName7.Location = new System.Drawing.Point(180, 409);
             this.lblMovieName7.Name = "lblMovieName7";
             this.lblMovieName7.Size = new System.Drawing.Size(171, 46);
             this.lblMovieName7.TabIndex = 17;
             this.lblMovieName7.Text = "The Exercist";
+            this.lblMovieName7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMovieName6
             // 
             this.lblMovieName6.AutoSize = true;
+            this.lblMovieName6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName6.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName6.ForeColor = System.Drawing.Color.White;
             this.lblMovieName6.Location = new System.Drawing.Point(3, 409);
             this.lblMovieName6.Name = "lblMovieName6";
             this.lblMovieName6.Size = new System.Drawing.Size(171, 46);
             this.lblMovieName6.TabIndex = 16;
             this.lblMovieName6.Text = "Scream";
+            this.lblMovieName6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnMovie10
             // 
@@ -204,42 +224,58 @@ namespace ScaryMovieForms
             // lblMovieName5
             // 
             this.lblMovieName5.AutoSize = true;
+            this.lblMovieName5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName5.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName5.ForeColor = System.Drawing.Color.White;
             this.lblMovieName5.Location = new System.Drawing.Point(711, 182);
             this.lblMovieName5.Name = "lblMovieName5";
             this.lblMovieName5.Size = new System.Drawing.Size(172, 45);
             this.lblMovieName5.TabIndex = 10;
             this.lblMovieName5.Text = "Saw";
+            this.lblMovieName5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMovieName4
             // 
             this.lblMovieName4.AutoSize = true;
+            this.lblMovieName4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName4.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName4.ForeColor = System.Drawing.Color.White;
             this.lblMovieName4.Location = new System.Drawing.Point(534, 182);
             this.lblMovieName4.Name = "lblMovieName4";
             this.lblMovieName4.Size = new System.Drawing.Size(171, 45);
             this.lblMovieName4.TabIndex = 9;
             this.lblMovieName4.Text = "Poltergeist";
+            this.lblMovieName4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMovieName3
             // 
             this.lblMovieName3.AutoSize = true;
+            this.lblMovieName3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName3.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName3.ForeColor = System.Drawing.Color.White;
             this.lblMovieName3.Location = new System.Drawing.Point(357, 182);
             this.lblMovieName3.Name = "lblMovieName3";
             this.lblMovieName3.Size = new System.Drawing.Size(171, 45);
             this.lblMovieName3.TabIndex = 8;
             this.lblMovieName3.Text = "IT";
+            this.lblMovieName3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMovieName1
             // 
             this.lblMovieName1.AutoSize = true;
+            this.lblMovieName1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName1.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName1.ForeColor = System.Drawing.Color.White;
             this.lblMovieName1.Location = new System.Drawing.Point(3, 182);
             this.lblMovieName1.Name = "lblMovieName1";
             this.lblMovieName1.Size = new System.Drawing.Size(171, 45);
             this.lblMovieName1.TabIndex = 7;
             this.lblMovieName1.Text = "Alien";
+            this.lblMovieName1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnMovie5
             // 
@@ -299,20 +335,26 @@ namespace ScaryMovieForms
             // lblMovieName2
             // 
             this.lblMovieName2.AutoSize = true;
+            this.lblMovieName2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMovieName2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMovieName2.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieName2.ForeColor = System.Drawing.Color.White;
             this.lblMovieName2.Location = new System.Drawing.Point(180, 182);
             this.lblMovieName2.Name = "lblMovieName2";
             this.lblMovieName2.Size = new System.Drawing.Size(171, 45);
             this.lblMovieName2.TabIndex = 6;
             this.lblMovieName2.Text = "Halloween";
+            this.lblMovieName2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblWelcome.Location = new System.Drawing.Point(217, 9);
+            this.lblWelcome.BackColor = System.Drawing.Color.Black;
+            this.lblWelcome.Font = new System.Drawing.Font("Chiller", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblWelcome.ForeColor = System.Drawing.Color.White;
+            this.lblWelcome.Location = new System.Drawing.Point(160, 19);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(488, 29);
+            this.lblWelcome.Size = new System.Drawing.Size(587, 54);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Welcome to Scary Movie Film Festival!";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -320,17 +362,17 @@ namespace ScaryMovieForms
             // rdoRamp
             // 
             this.rdoRamp.AutoSize = true;
-            this.rdoRamp.Location = new System.Drawing.Point(723, 55);
+            this.rdoRamp.Location = new System.Drawing.Point(416, 551);
             this.rdoRamp.Name = "rdoRamp";
-            this.rdoRamp.Size = new System.Drawing.Size(122, 24);
+            this.rdoRamp.Size = new System.Drawing.Size(220, 24);
             this.rdoRamp.TabIndex = 2;
-            this.rdoRamp.Text = "I need a ramp";
+            this.rdoRamp.Text = "Show only movies with ramp";
             this.rdoRamp.UseVisualStyleBackColor = true;
             this.rdoRamp.CheckedChanged += new System.EventHandler(this.rdoRamp_CheckedChanged);
             // 
             // btnClearInfo
             // 
-            this.btnClearInfo.Location = new System.Drawing.Point(592, 53);
+            this.btnClearInfo.Location = new System.Drawing.Point(304, 546);
             this.btnClearInfo.Name = "btnClearInfo";
             this.btnClearInfo.Size = new System.Drawing.Size(94, 29);
             this.btnClearInfo.TabIndex = 3;
@@ -363,6 +405,9 @@ namespace ScaryMovieForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 587);
             this.Controls.Add(this.btnCloseProgram);
             this.Controls.Add(this.btnShowMyBookings);
@@ -370,8 +415,10 @@ namespace ScaryMovieForms
             this.Controls.Add(this.rdoRamp);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.tlpMainMenu);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.tlpMainMenu.ResumeLayout(false);
             this.tlpMainMenu.PerformLayout();

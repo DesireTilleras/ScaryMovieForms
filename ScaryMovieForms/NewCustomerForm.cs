@@ -30,17 +30,10 @@ namespace ScaryMovieForms
             firstName = HelperClass.StringWashName(txtFirstName.Text);
             lastName = HelperClass.StringWashName(txtLastName.Text);
 
-                HelperClass.functions.AddCustomer(phoneNumber, firstName, lastName);
-                MessageBox.Show($"Firstname: {firstName}\n" +
-                    $"Lastname: {lastName}\n" +
-                    $"Phonenumber: {phoneNumber}");
-
-            var confirmationBookingForm = new ConfirmBookingForm();
+            HelperClass.functions.AddCustomer(phoneNumber, firstName, lastName);
+             var confirmationBookingForm = new ConfirmBookingForm();
             this.Hide();
             confirmationBookingForm.Show();
-           
-
-
         }
 
         private void btnGoToMenu_Click(object sender, EventArgs e)

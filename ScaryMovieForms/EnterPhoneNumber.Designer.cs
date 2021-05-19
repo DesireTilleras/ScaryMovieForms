@@ -83,6 +83,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.lblTextToContinue);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EnterPhoneNumber";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EnterPhoneNumber";
             this.ResumeLayout(false);
             this.PerformLayout();

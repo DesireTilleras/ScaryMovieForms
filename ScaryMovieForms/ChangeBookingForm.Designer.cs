@@ -609,6 +609,7 @@ namespace ScaryMovieForms
             this.Controls.Add(this.lblChangeBooking);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChangeBookingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangeBookingForm";
             this.tlpVisualizeSeats.ResumeLayout(false);
             this.tlpVisualizeSeats.PerformLayout();

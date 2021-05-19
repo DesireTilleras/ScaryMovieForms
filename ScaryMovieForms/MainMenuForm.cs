@@ -22,6 +22,7 @@ namespace ScaryMovieForms
             InitializeComponent();
 
             btnClearInfo.Visible = false;
+            
         }
 
         private void rdoRamp_CheckedChanged(object sender, EventArgs e)
