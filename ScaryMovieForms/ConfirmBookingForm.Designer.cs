@@ -68,6 +68,7 @@ namespace ScaryMovieForms
             // 
             // txtMovieTitle
             // 
+            this.txtMovieTitle.Enabled = false;
             this.txtMovieTitle.Location = new System.Drawing.Point(157, 230);
             this.txtMovieTitle.Name = "txtMovieTitle";
             this.txtMovieTitle.Size = new System.Drawing.Size(213, 27);
@@ -85,6 +86,7 @@ namespace ScaryMovieForms
             // 
             // txtShowTime
             // 
+            this.txtShowTime.Enabled = false;
             this.txtShowTime.Location = new System.Drawing.Point(157, 273);
             this.txtShowTime.Name = "txtShowTime";
             this.txtShowTime.Size = new System.Drawing.Size(213, 27);
@@ -131,6 +133,7 @@ namespace ScaryMovieForms
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Enabled = false;
             this.txtFirstName.Location = new System.Drawing.Point(516, 233);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(178, 27);
@@ -138,6 +141,7 @@ namespace ScaryMovieForms
             // 
             // txtLastName
             // 
+            this.txtLastName.Enabled = false;
             this.txtLastName.Location = new System.Drawing.Point(516, 273);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(178, 27);
