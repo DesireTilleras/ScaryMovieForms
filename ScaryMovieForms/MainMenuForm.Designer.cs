@@ -362,17 +362,18 @@ namespace ScaryMovieForms
             // rdoRamp
             // 
             this.rdoRamp.AutoSize = true;
+            this.rdoRamp.BackColor = System.Drawing.Color.White;
             this.rdoRamp.Location = new System.Drawing.Point(416, 551);
             this.rdoRamp.Name = "rdoRamp";
             this.rdoRamp.Size = new System.Drawing.Size(220, 24);
             this.rdoRamp.TabIndex = 2;
             this.rdoRamp.Text = "Show only movies with ramp";
-            this.rdoRamp.UseVisualStyleBackColor = true;
+            this.rdoRamp.UseVisualStyleBackColor = false;
             this.rdoRamp.CheckedChanged += new System.EventHandler(this.rdoRamp_CheckedChanged);
             // 
             // btnClearInfo
             // 
-            this.btnClearInfo.Location = new System.Drawing.Point(304, 546);
+            this.btnClearInfo.Location = new System.Drawing.Point(304, 550);
             this.btnClearInfo.Name = "btnClearInfo";
             this.btnClearInfo.Size = new System.Drawing.Size(94, 29);
             this.btnClearInfo.TabIndex = 3;
@@ -383,7 +384,7 @@ namespace ScaryMovieForms
             // 
             // btnShowMyBookings
             // 
-            this.btnShowMyBookings.Location = new System.Drawing.Point(673, 546);
+            this.btnShowMyBookings.Location = new System.Drawing.Point(671, 549);
             this.btnShowMyBookings.Name = "btnShowMyBookings";
             this.btnShowMyBookings.Size = new System.Drawing.Size(209, 29);
             this.btnShowMyBookings.TabIndex = 4;
@@ -393,7 +394,7 @@ namespace ScaryMovieForms
             // 
             // btnCloseProgram
             // 
-            this.btnCloseProgram.Location = new System.Drawing.Point(12, 546);
+            this.btnCloseProgram.Location = new System.Drawing.Point(12, 549);
             this.btnCloseProgram.Name = "btnCloseProgram";
             this.btnCloseProgram.Size = new System.Drawing.Size(132, 29);
             this.btnCloseProgram.TabIndex = 5;

@@ -42,30 +42,39 @@ namespace ScaryMovieForms
         }
         private void btnChangeBooking_Click(object sender, EventArgs e)
         {
-            var stringList = cklBookingList.CheckedItems.Cast<string>().ToList();
-
-            TicketList.Clear();
-
-            var bookingNumberList = new List<int>();
-
-            foreach (var number in stringList)
+            try
             {
-                bookingNumberList.Add(Int32.Parse(number));
-            }
+                var stringList = cklBookingList.CheckedItems.Cast<string>().ToList();
 
-            foreach (var bookingId in bookingNumberList)
-            {
-                MovieTitle = HelperClass.functions.MovieTitleFromBookingId(bookingId);
-                MovieId = HelperClass.functions.GetMovieId(MovieTitle);
-                ShowTime = HelperClass.functions.DisplayShowTimeInOverview(bookingId);
-                ShowTimeId = HelperClass.functions.DisplayShowTimeId(bookingId);
+                TicketList.Clear();
 
-                foreach (var ticket in HelperClass.functions.ListOfTicketsOneBooking(bookingId))
+                var bookingNumberList = new List<int>();
+
+                foreach (var number in stringList)
                 {
-                    TicketList.Add((int)ticket);
+                    bookingNumberList.Add(Int32.Parse(number));
                 }
 
+                foreach (var bookingId in bookingNumberList)
+                {
+                    MovieTitle = HelperClass.functions.MovieTitleFromBookingId(bookingId);
+                    MovieId = HelperClass.functions.GetMovieId(MovieTitle);
+                    ShowTime = HelperClass.functions.DisplayShowTimeInOverview(bookingId);
+                    ShowTimeId = HelperClass.functions.DisplayShowTimeId(bookingId);
+
+                    foreach (var ticket in HelperClass.functions.ListOfTicketsOneBooking(bookingId))
+                    {
+                        TicketList.Add((int)ticket);
+                    }
+
+                }
             }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Could not retrieve data from database");
+            }
+            
 
             var changeBookingForm = new ChangeBookingForm();
             this.Hide();
@@ -82,26 +91,37 @@ namespace ScaryMovieForms
         private void btnDeleteBooking_Click(object sender, EventArgs e)
         {
             try
-            {
-                var stringList = cklBookingList.CheckedItems.Cast<string>().ToList();
-
-                TicketList.Clear();
-
-                var bookingNumberList = new List<int>();
-
-                foreach (var number in stringList)
+            {               
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this booking?", "Delete booking", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
                 {
-                    bookingNumberList.Add(Int32.Parse(number));
+                    var stringList = cklBookingList.CheckedItems.Cast<string>().ToList();
+
+                    TicketList.Clear();
+
+                    var bookingNumberList = new List<int>();
+
+                    foreach (var number in stringList)
+                    {
+                        bookingNumberList.Add(Int32.Parse(number));
+                    }
+                    foreach (var bookingId in bookingNumberList)
+                    {
+                        HelperClass.functions.DeleteBooking(bookingId);
+                    }
+
+                    MessageBox.Show("The booking is now deleted, you will automatically go back to main menu");
+                    var mainMenuForm = new MainMenuForm();
+                    this.Hide();
+                    mainMenuForm.Show();
                 }
-
-                MessageBox.Show("Are you sure you want to delete this booking?");
-
-                foreach (var bookingId in bookingNumberList)
+                else if (dialogResult == DialogResult.No)
                 {
-                    HelperClass.functions.DeleteBooking(bookingId);
+                    var changeBookingForm = new BookingOverviewForm();
+                    this.Hide();
+                    changeBookingForm.Show();
                 }
-
-                MessageBox.Show("The booking is now deleted, you will automatically go back to main menu");
+                
             }
             catch (Exception)
             {
@@ -116,6 +136,21 @@ namespace ScaryMovieForms
             var mainMenuForm = new MainMenuForm();
             this.Hide();
             mainMenuForm.Show();
+        }
+
+        private void cklBookingList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (cklBookingList.CheckedItems.Count == 0)
+            {
+                btnChangeBooking.Enabled = false;
+                btnDeleteBooking.Enabled = false;
+            }
+            if (cklBookingList.CheckedItems.Count != 0)
+            {
+                btnChangeBooking.Enabled = true;
+                btnDeleteBooking.Enabled = true;
+            }
         }
     }
 }

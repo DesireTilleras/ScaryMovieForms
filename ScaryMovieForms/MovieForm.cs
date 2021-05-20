@@ -28,8 +28,16 @@ namespace ScaryMovieForms
             rdoShow2.Text = HelperClass.functions.GetShowTime(2);
             rdoShow3.Text = HelperClass.functions.GetShowTime(3);
             rdoShow4.Text = HelperClass.functions.GetShowTime(4);
+            try
+            {
+                picMovieImage.Image = Image.FromFile(HelperClass.functions.GetMovieImagePath(MainMenuForm.MovieChoice));
+            }
+            catch (Exception)
+            {
 
-            picMovieImage.Image = Image.FromFile(HelperClass.functions.GetMovieImagePath(MainMenuForm.MovieChoice));
+                MessageBox.Show("Could not find image in file");
+            }
+            
 
             labels.Add(lblSeat1);
             labels.Add(lblSeat2);

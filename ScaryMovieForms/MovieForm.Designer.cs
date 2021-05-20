@@ -87,9 +87,9 @@ namespace ScaryMovieForms
             // lblMovieTitle
             // 
             this.lblMovieTitle.BackColor = System.Drawing.Color.White;
-            this.lblMovieTitle.Location = new System.Drawing.Point(205, 84);
+            this.lblMovieTitle.Location = new System.Drawing.Point(205, 75);
             this.lblMovieTitle.Name = "lblMovieTitle";
-            this.lblMovieTitle.Size = new System.Drawing.Size(160, 30);
+            this.lblMovieTitle.Size = new System.Drawing.Size(160, 39);
             this.lblMovieTitle.TabIndex = 1;
             this.lblMovieTitle.Text = "Movie Title";
             this.lblMovieTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,9 +146,9 @@ namespace ScaryMovieForms
             // 
             this.cklListTickets.CheckOnClick = true;
             this.cklListTickets.FormattingEnabled = true;
-            this.cklListTickets.Location = new System.Drawing.Point(382, 104);
+            this.cklListTickets.Location = new System.Drawing.Point(382, 126);
             this.cklListTickets.Name = "cklListTickets";
-            this.cklListTickets.Size = new System.Drawing.Size(104, 334);
+            this.cklListTickets.Size = new System.Drawing.Size(104, 378);
             this.cklListTickets.TabIndex = 6;
             this.cklListTickets.SelectedIndexChanged += new System.EventHandler(this.cklListTickets_SelectedIndexChanged);
             // 
@@ -181,7 +181,7 @@ namespace ScaryMovieForms
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat3, 2, 0);
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat2, 1, 0);
             this.tlpVisualizeSeats.Controls.Add(this.lblSeat1, 0, 0);
-            this.tlpVisualizeSeats.Location = new System.Drawing.Point(513, 138);
+            this.tlpVisualizeSeats.Location = new System.Drawing.Point(513, 127);
             this.tlpVisualizeSeats.Name = "tlpVisualizeSeats";
             this.tlpVisualizeSeats.RowCount = 4;
             this.tlpVisualizeSeats.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -434,7 +434,7 @@ namespace ScaryMovieForms
             // 
             // btnBooked
             // 
-            this.btnBooked.Location = new System.Drawing.Point(703, 483);
+            this.btnBooked.Location = new System.Drawing.Point(780, 546);
             this.btnBooked.Name = "btnBooked";
             this.btnBooked.Size = new System.Drawing.Size(94, 29);
             this.btnBooked.TabIndex = 8;
@@ -445,7 +445,7 @@ namespace ScaryMovieForms
             // 
             // btnCheckSeatList
             // 
-            this.btnCheckSeatList.Location = new System.Drawing.Point(493, 482);
+            this.btnCheckSeatList.Location = new System.Drawing.Point(564, 546);
             this.btnCheckSeatList.Name = "btnCheckSeatList";
             this.btnCheckSeatList.Size = new System.Drawing.Size(158, 29);
             this.btnCheckSeatList.TabIndex = 9;
@@ -455,11 +455,11 @@ namespace ScaryMovieForms
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(320, 482);
+            this.btnBack.Location = new System.Drawing.Point(12, 546);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(94, 29);
+            this.btnBack.Size = new System.Drawing.Size(187, 29);
             this.btnBack.TabIndex = 10;
-            this.btnBack.Text = "Go back";
+            this.btnBack.Text = "Go back to main menu";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -475,7 +475,7 @@ namespace ScaryMovieForms
             // lblGreen
             // 
             this.lblGreen.BackColor = System.Drawing.Color.LightGreen;
-            this.lblGreen.Location = new System.Drawing.Point(513, 395);
+            this.lblGreen.Location = new System.Drawing.Point(513, 461);
             this.lblGreen.Name = "lblGreen";
             this.lblGreen.Size = new System.Drawing.Size(40, 33);
             this.lblGreen.TabIndex = 12;
@@ -484,7 +484,7 @@ namespace ScaryMovieForms
             // lblRed
             // 
             this.lblRed.BackColor = System.Drawing.Color.LightCoral;
-            this.lblRed.Location = new System.Drawing.Point(513, 438);
+            this.lblRed.Location = new System.Drawing.Point(777, 461);
             this.lblRed.Name = "lblRed";
             this.lblRed.Size = new System.Drawing.Size(40, 33);
             this.lblRed.TabIndex = 13;
@@ -494,7 +494,7 @@ namespace ScaryMovieForms
             // 
             this.lblFree.AutoSize = true;
             this.lblFree.BackColor = System.Drawing.Color.White;
-            this.lblFree.Location = new System.Drawing.Point(559, 404);
+            this.lblFree.Location = new System.Drawing.Point(554, 466);
             this.lblFree.Name = "lblFree";
             this.lblFree.Size = new System.Drawing.Size(108, 20);
             this.lblFree.TabIndex = 14;
@@ -505,7 +505,7 @@ namespace ScaryMovieForms
             // 
             this.lblBooked.AutoSize = true;
             this.lblBooked.BackColor = System.Drawing.Color.White;
-            this.lblBooked.Location = new System.Drawing.Point(559, 449);
+            this.lblBooked.Location = new System.Drawing.Point(823, 466);
             this.lblBooked.Name = "lblBooked";
             this.lblBooked.Size = new System.Drawing.Size(60, 20);
             this.lblBooked.TabIndex = 15;
@@ -546,7 +546,7 @@ namespace ScaryMovieForms
             // lblSalmon
             // 
             this.lblSalmon.BackColor = System.Drawing.Color.LightSalmon;
-            this.lblSalmon.Location = new System.Drawing.Point(682, 395);
+            this.lblSalmon.Location = new System.Drawing.Point(668, 461);
             this.lblSalmon.Name = "lblSalmon";
             this.lblSalmon.Size = new System.Drawing.Size(40, 33);
             this.lblSalmon.TabIndex = 19;
@@ -556,7 +556,7 @@ namespace ScaryMovieForms
             // 
             this.lblChoice.AutoSize = true;
             this.lblChoice.BackColor = System.Drawing.Color.White;
-            this.lblChoice.Location = new System.Drawing.Point(728, 404);
+            this.lblChoice.Location = new System.Drawing.Point(714, 466);
             this.lblChoice.Name = "lblChoice";
             this.lblChoice.Size = new System.Drawing.Size(57, 20);
             this.lblChoice.TabIndex = 20;
@@ -570,7 +570,7 @@ namespace ScaryMovieForms
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(820, 531);
+            this.ClientSize = new System.Drawing.Size(886, 587);
             this.Controls.Add(this.lblChoice);
             this.Controls.Add(this.lblSalmon);
             this.Controls.Add(this.lblScreen);

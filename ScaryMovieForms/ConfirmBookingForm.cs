@@ -27,9 +27,6 @@ namespace ScaryMovieForms
             txtShowTime.Text = HelperClass.functions.GetShowTime(MovieForm.showTime);
 
             lstListOfTickets.DataSource = MovieForm.BookedTickets;
-
-
-
         }
 
         private void btnBook_Click(object sender, EventArgs e)

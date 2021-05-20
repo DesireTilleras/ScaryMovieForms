@@ -39,7 +39,7 @@ namespace ScaryMovieForms
             // 
             this.lblTextToContinue.AutoSize = true;
             this.lblTextToContinue.BackColor = System.Drawing.Color.White;
-            this.lblTextToContinue.Location = new System.Drawing.Point(12, 181);
+            this.lblTextToContinue.Location = new System.Drawing.Point(57, 307);
             this.lblTextToContinue.Name = "lblTextToContinue";
             this.lblTextToContinue.Size = new System.Drawing.Size(311, 20);
             this.lblTextToContinue.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace ScaryMovieForms
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(340, 178);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(405, 304);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(190, 27);
             this.txtPhoneNumber.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace ScaryMovieForms
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(445, 348);
+            this.btnNext.Location = new System.Drawing.Point(780, 546);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(94, 29);
             this.btnNext.TabIndex = 2;
@@ -65,7 +65,7 @@ namespace ScaryMovieForms
             // 
             // btnBackToMenu
             // 
-            this.btnBackToMenu.Location = new System.Drawing.Point(12, 352);
+            this.btnBackToMenu.Location = new System.Drawing.Point(12, 546);
             this.btnBackToMenu.Name = "btnBackToMenu";
             this.btnBackToMenu.Size = new System.Drawing.Size(171, 29);
             this.btnBackToMenu.TabIndex = 3;
@@ -78,7 +78,8 @@ namespace ScaryMovieForms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod;
-            this.ClientSize = new System.Drawing.Size(561, 393);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(886, 587);
             this.Controls.Add(this.btnBackToMenu);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.txtPhoneNumber);

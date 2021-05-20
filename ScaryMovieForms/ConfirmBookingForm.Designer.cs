@@ -50,7 +50,7 @@ namespace ScaryMovieForms
             this.lblConfirmBookingTitle.BackColor = System.Drawing.Color.White;
             this.lblConfirmBookingTitle.Font = new System.Drawing.Font("Chiller", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblConfirmBookingTitle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblConfirmBookingTitle.Location = new System.Drawing.Point(215, 122);
+            this.lblConfirmBookingTitle.Location = new System.Drawing.Point(315, 138);
             this.lblConfirmBookingTitle.Name = "lblConfirmBookingTitle";
             this.lblConfirmBookingTitle.Size = new System.Drawing.Size(239, 50);
             this.lblConfirmBookingTitle.TabIndex = 0;
@@ -145,7 +145,7 @@ namespace ScaryMovieForms
             // 
             // btnBook
             // 
-            this.btnBook.Location = new System.Drawing.Point(559, 425);
+            this.btnBook.Location = new System.Drawing.Point(719, 546);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(155, 29);
             this.btnBook.TabIndex = 11;
@@ -155,7 +155,7 @@ namespace ScaryMovieForms
             // 
             // btnGoBackMaenu
             // 
-            this.btnGoBackMaenu.Location = new System.Drawing.Point(12, 425);
+            this.btnGoBackMaenu.Location = new System.Drawing.Point(12, 546);
             this.btnGoBackMaenu.Name = "btnGoBackMaenu";
             this.btnGoBackMaenu.Size = new System.Drawing.Size(198, 29);
             this.btnGoBackMaenu.TabIndex = 12;
@@ -168,7 +168,9 @@ namespace ScaryMovieForms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod1;
-            this.ClientSize = new System.Drawing.Size(729, 466);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(886, 587);
+            this.ControlBox = false;
             this.Controls.Add(this.btnGoBackMaenu);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.txtLastName);

@@ -98,15 +98,26 @@ namespace ScaryMovieForms
             tlpVisualizeSeats.Visible = true;
             cklListTickets.Visible = true;
 
-            foreach (var ticket in HelperClass.functions.ListTickets(choice, showTimeId))
+            try
+            {
+                foreach (var ticket in HelperClass.functions.ListTickets(choice, showTimeId))
+                {
+
+                    if (ticket.BookingId == null)
+                    {
+                        cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
+                    }
+                }
+                SetColorOnSeat(cklListTickets.Items);
+
+            }
+            catch (Exception)
             {
 
-                if (ticket.BookingId == null)
-                {
-                    cklListTickets.Items.Add(ticket.SeatNumber.ToString(), CheckState.Unchecked);
-                }
+                MessageBox.Show("Could not retrieve data from database");
             }
-            SetColorOnSeat(cklListTickets.Items);
+
+           
         }
 
         private void rdoShow1_CheckedChanged(object sender, EventArgs e)
@@ -311,6 +322,13 @@ namespace ScaryMovieForms
                 }
             }
             SetColorOnSeat(cklListTickets.Items);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            var overviewForm = new BookingOverviewForm();
+            overviewForm.Show();
         }
     }
 }

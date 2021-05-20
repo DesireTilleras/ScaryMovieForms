@@ -40,19 +40,21 @@ namespace ScaryMovieForms
             // 
             // cklBookingList
             // 
+            this.cklBookingList.CheckOnClick = true;
             this.cklBookingList.FormattingEnabled = true;
-            this.cklBookingList.Location = new System.Drawing.Point(38, 194);
+            this.cklBookingList.Location = new System.Drawing.Point(88, 258);
             this.cklBookingList.Name = "cklBookingList";
             this.cklBookingList.Size = new System.Drawing.Size(25, 180);
             this.cklBookingList.TabIndex = 0;
             this.cklBookingList.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cklBookingList_ItemCheck_1);
+            this.cklBookingList.SelectedIndexChanged += new System.EventHandler(this.cklBookingList_SelectedIndexChanged);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.White;
             this.lblTitle.Font = new System.Drawing.Font("Chiller", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.Location = new System.Drawing.Point(252, 118);
+            this.lblTitle.Location = new System.Drawing.Point(292, 136);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(319, 50);
             this.lblTitle.TabIndex = 1;
@@ -60,7 +62,8 @@ namespace ScaryMovieForms
             // 
             // btnDeleteBooking
             // 
-            this.btnDeleteBooking.Location = new System.Drawing.Point(624, 409);
+            this.btnDeleteBooking.Enabled = false;
+            this.btnDeleteBooking.Location = new System.Drawing.Point(728, 546);
             this.btnDeleteBooking.Name = "btnDeleteBooking";
             this.btnDeleteBooking.Size = new System.Drawing.Size(146, 29);
             this.btnDeleteBooking.TabIndex = 2;
@@ -70,7 +73,8 @@ namespace ScaryMovieForms
             // 
             // btnChangeBooking
             // 
-            this.btnChangeBooking.Location = new System.Drawing.Point(423, 409);
+            this.btnChangeBooking.Enabled = false;
+            this.btnChangeBooking.Location = new System.Drawing.Point(508, 546);
             this.btnChangeBooking.Name = "btnChangeBooking";
             this.btnChangeBooking.Size = new System.Drawing.Size(164, 29);
             this.btnChangeBooking.TabIndex = 3;
@@ -80,7 +84,7 @@ namespace ScaryMovieForms
             // 
             // btnGoBackMenu
             // 
-            this.btnGoBackMenu.Location = new System.Drawing.Point(38, 409);
+            this.btnGoBackMenu.Location = new System.Drawing.Point(12, 546);
             this.btnGoBackMenu.Name = "btnGoBackMenu";
             this.btnGoBackMenu.Size = new System.Drawing.Size(182, 29);
             this.btnGoBackMenu.TabIndex = 4;
@@ -93,7 +97,7 @@ namespace ScaryMovieForms
             this.lstShowBookingInfo.Enabled = false;
             this.lstShowBookingInfo.FormattingEnabled = true;
             this.lstShowBookingInfo.ItemHeight = 20;
-            this.lstShowBookingInfo.Location = new System.Drawing.Point(65, 194);
+            this.lstShowBookingInfo.Location = new System.Drawing.Point(119, 258);
             this.lstShowBookingInfo.Name = "lstShowBookingInfo";
             this.lstShowBookingInfo.Size = new System.Drawing.Size(705, 184);
             this.lstShowBookingInfo.TabIndex = 5;
@@ -102,7 +106,7 @@ namespace ScaryMovieForms
             // 
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.BackColor = System.Drawing.Color.White;
-            this.lblCustomerName.Location = new System.Drawing.Point(38, 159);
+            this.lblCustomerName.Location = new System.Drawing.Point(88, 224);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(113, 20);
             this.lblCustomerName.TabIndex = 6;
@@ -114,7 +118,7 @@ namespace ScaryMovieForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(886, 587);
             this.Controls.Add(this.lblCustomerName);
             this.Controls.Add(this.lstShowBookingInfo);
             this.Controls.Add(this.btnGoBackMenu);

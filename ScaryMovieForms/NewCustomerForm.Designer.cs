@@ -44,7 +44,7 @@ namespace ScaryMovieForms
             // 
             this.lblPhoneNumber.AutoSize = true;
             this.lblPhoneNumber.BackColor = System.Drawing.Color.White;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(153, 168);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(219, 251);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(108, 20);
             this.lblPhoneNumber.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace ScaryMovieForms
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.BackColor = System.Drawing.Color.White;
-            this.lblFirstName.Location = new System.Drawing.Point(181, 216);
+            this.lblFirstName.Location = new System.Drawing.Point(247, 311);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(80, 20);
             this.lblFirstName.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace ScaryMovieForms
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.BackColor = System.Drawing.Color.White;
-            this.lblLastName.Location = new System.Drawing.Point(182, 266);
+            this.lblLastName.Location = new System.Drawing.Point(247, 377);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(79, 20);
             this.lblLastName.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace ScaryMovieForms
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(280, 168);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(355, 248);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.ReadOnly = true;
             this.txtPhoneNumber.Size = new System.Drawing.Size(176, 27);
@@ -80,7 +80,7 @@ namespace ScaryMovieForms
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(280, 213);
+            this.txtFirstName.Location = new System.Drawing.Point(355, 310);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(176, 27);
             this.txtFirstName.TabIndex = 4;
@@ -88,7 +88,7 @@ namespace ScaryMovieForms
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(280, 263);
+            this.txtLastName.Location = new System.Drawing.Point(355, 375);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(176, 27);
             this.txtLastName.TabIndex = 5;
@@ -99,7 +99,7 @@ namespace ScaryMovieForms
             this.lblNewCustomer.AutoSize = true;
             this.lblNewCustomer.BackColor = System.Drawing.Color.White;
             this.lblNewCustomer.Font = new System.Drawing.Font("Chiller", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNewCustomer.Location = new System.Drawing.Point(264, 95);
+            this.lblNewCustomer.Location = new System.Drawing.Point(321, 129);
             this.lblNewCustomer.Name = "lblNewCustomer";
             this.lblNewCustomer.Size = new System.Drawing.Size(210, 50);
             this.lblNewCustomer.TabIndex = 6;
@@ -107,7 +107,7 @@ namespace ScaryMovieForms
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(598, 360);
+            this.btnNext.Location = new System.Drawing.Point(780, 546);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(94, 29);
             this.btnNext.TabIndex = 7;
@@ -117,9 +117,9 @@ namespace ScaryMovieForms
             // 
             // btnGoToMenu
             // 
-            this.btnGoToMenu.Location = new System.Drawing.Point(12, 360);
+            this.btnGoToMenu.Location = new System.Drawing.Point(12, 546);
             this.btnGoToMenu.Name = "btnGoToMenu";
-            this.btnGoToMenu.Size = new System.Drawing.Size(157, 29);
+            this.btnGoToMenu.Size = new System.Drawing.Size(197, 29);
             this.btnGoToMenu.TabIndex = 8;
             this.btnGoToMenu.Text = "Go back to main menu";
             this.btnGoToMenu.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@ namespace ScaryMovieForms
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackgroundImage = global::ScaryMovieForms.Properties.Resources.blod;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(703, 404);
+            this.ClientSize = new System.Drawing.Size(886, 587);
             this.Controls.Add(this.btnGoToMenu);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblNewCustomer);
