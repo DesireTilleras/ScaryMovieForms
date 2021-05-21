@@ -121,6 +121,8 @@ namespace ScaryMovieForms
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            
+            
             BookedTickets.Clear();
             this.Close();
             var mainMenu = new MainMenuForm();

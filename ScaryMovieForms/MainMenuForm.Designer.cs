@@ -86,14 +86,14 @@ namespace ScaryMovieForms
             this.tlpMainMenu.Controls.Add(this.btnMovie2, 1, 0);
             this.tlpMainMenu.Controls.Add(this.btnMovie1, 0, 0);
             this.tlpMainMenu.Controls.Add(this.lblMovieName2, 0, 1);
-            this.tlpMainMenu.Location = new System.Drawing.Point(-1, 85);
+            this.tlpMainMenu.Location = new System.Drawing.Point(-1, 76);
             this.tlpMainMenu.Name = "tlpMainMenu";
             this.tlpMainMenu.RowCount = 4;
             this.tlpMainMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tlpMainMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tlpMainMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tlpMainMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlpMainMenu.Size = new System.Drawing.Size(886, 455);
+            this.tlpMainMenu.Size = new System.Drawing.Size(891, 464);
             this.tlpMainMenu.TabIndex = 0;
             // 
             // lblMovieName10
@@ -103,9 +103,9 @@ namespace ScaryMovieForms
             this.lblMovieName10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName10.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName10.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName10.Location = new System.Drawing.Point(711, 409);
+            this.lblMovieName10.Location = new System.Drawing.Point(715, 416);
             this.lblMovieName10.Name = "lblMovieName10";
-            this.lblMovieName10.Size = new System.Drawing.Size(172, 46);
+            this.lblMovieName10.Size = new System.Drawing.Size(173, 48);
             this.lblMovieName10.TabIndex = 20;
             this.lblMovieName10.Text = "The Witch";
             this.lblMovieName10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,9 +117,9 @@ namespace ScaryMovieForms
             this.lblMovieName9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName9.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName9.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName9.Location = new System.Drawing.Point(534, 409);
+            this.lblMovieName9.Location = new System.Drawing.Point(537, 416);
             this.lblMovieName9.Name = "lblMovieName9";
-            this.lblMovieName9.Size = new System.Drawing.Size(171, 46);
+            this.lblMovieName9.Size = new System.Drawing.Size(172, 48);
             this.lblMovieName9.TabIndex = 19;
             this.lblMovieName9.Text = "The Ring";
             this.lblMovieName9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,9 +131,9 @@ namespace ScaryMovieForms
             this.lblMovieName8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName8.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName8.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName8.Location = new System.Drawing.Point(357, 409);
+            this.lblMovieName8.Location = new System.Drawing.Point(359, 416);
             this.lblMovieName8.Name = "lblMovieName8";
-            this.lblMovieName8.Size = new System.Drawing.Size(171, 46);
+            this.lblMovieName8.Size = new System.Drawing.Size(172, 48);
             this.lblMovieName8.TabIndex = 18;
             this.lblMovieName8.Text = "The Grudge";
             this.lblMovieName8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,9 +145,9 @@ namespace ScaryMovieForms
             this.lblMovieName7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName7.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName7.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName7.Location = new System.Drawing.Point(180, 409);
+            this.lblMovieName7.Location = new System.Drawing.Point(181, 416);
             this.lblMovieName7.Name = "lblMovieName7";
-            this.lblMovieName7.Size = new System.Drawing.Size(171, 46);
+            this.lblMovieName7.Size = new System.Drawing.Size(172, 48);
             this.lblMovieName7.TabIndex = 17;
             this.lblMovieName7.Text = "The Exercist";
             this.lblMovieName7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,64 +159,74 @@ namespace ScaryMovieForms
             this.lblMovieName6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName6.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName6.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName6.Location = new System.Drawing.Point(3, 409);
+            this.lblMovieName6.Location = new System.Drawing.Point(3, 416);
             this.lblMovieName6.Name = "lblMovieName6";
-            this.lblMovieName6.Size = new System.Drawing.Size(171, 46);
+            this.lblMovieName6.Size = new System.Drawing.Size(172, 48);
             this.lblMovieName6.TabIndex = 16;
             this.lblMovieName6.Text = "Scream";
             this.lblMovieName6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnMovie10
             // 
+            this.btnMovie10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie10.Image = global::ScaryMovieForms.Properties.Resources.TheWitch;
-            this.btnMovie10.Location = new System.Drawing.Point(711, 230);
+            this.btnMovie10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMovie10.Location = new System.Drawing.Point(715, 234);
             this.btnMovie10.Name = "btnMovie10";
-            this.btnMovie10.Size = new System.Drawing.Size(172, 176);
+            this.btnMovie10.Size = new System.Drawing.Size(173, 179);
             this.btnMovie10.TabIndex = 15;
             this.btnMovie10.UseVisualStyleBackColor = true;
             this.btnMovie10.Click += new System.EventHandler(this.btnMovie10_Click);
             // 
             // btnMovie9
             // 
+            this.btnMovie9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie9.Image = global::ScaryMovieForms.Properties.Resources.TheRing;
-            this.btnMovie9.Location = new System.Drawing.Point(534, 230);
+            this.btnMovie9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMovie9.Location = new System.Drawing.Point(537, 234);
             this.btnMovie9.Name = "btnMovie9";
-            this.btnMovie9.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie9.Size = new System.Drawing.Size(172, 179);
             this.btnMovie9.TabIndex = 14;
             this.btnMovie9.UseVisualStyleBackColor = true;
             this.btnMovie9.Click += new System.EventHandler(this.btnMovie9_Click);
             // 
             // btnMovie8
             // 
+            this.btnMovie8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie8.Image = global::ScaryMovieForms.Properties.Resources.TheGrudge;
-            this.btnMovie8.Location = new System.Drawing.Point(357, 230);
+            this.btnMovie8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMovie8.Location = new System.Drawing.Point(359, 234);
             this.btnMovie8.Name = "btnMovie8";
-            this.btnMovie8.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie8.Size = new System.Drawing.Size(172, 179);
             this.btnMovie8.TabIndex = 13;
             this.btnMovie8.UseVisualStyleBackColor = true;
             this.btnMovie8.Click += new System.EventHandler(this.btnMovie8_Click);
             // 
             // btnMovie7
             // 
+            this.btnMovie7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie7.Image = global::ScaryMovieForms.Properties.Resources.TheExorcist;
-            this.btnMovie7.Location = new System.Drawing.Point(180, 230);
+            this.btnMovie7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMovie7.Location = new System.Drawing.Point(181, 234);
             this.btnMovie7.Name = "btnMovie7";
-            this.btnMovie7.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie7.Size = new System.Drawing.Size(172, 179);
             this.btnMovie7.TabIndex = 12;
             this.btnMovie7.UseVisualStyleBackColor = true;
             this.btnMovie7.Click += new System.EventHandler(this.btnMovie7_Click);
             // 
             // btnMovie6
             // 
+            this.btnMovie6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie6.Image = global::ScaryMovieForms.Properties.Resources.Scream;
-            this.btnMovie6.Location = new System.Drawing.Point(3, 230);
+            this.btnMovie6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMovie6.Location = new System.Drawing.Point(3, 234);
             this.btnMovie6.Name = "btnMovie6";
-            this.btnMovie6.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie6.Size = new System.Drawing.Size(172, 179);
             this.btnMovie6.TabIndex = 11;
             this.btnMovie6.UseVisualStyleBackColor = true;
             this.btnMovie6.Click += new System.EventHandler(this.btnMovie6_Click);
@@ -228,9 +238,9 @@ namespace ScaryMovieForms
             this.lblMovieName5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName5.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName5.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName5.Location = new System.Drawing.Point(711, 182);
+            this.lblMovieName5.Location = new System.Drawing.Point(715, 185);
             this.lblMovieName5.Name = "lblMovieName5";
-            this.lblMovieName5.Size = new System.Drawing.Size(172, 45);
+            this.lblMovieName5.Size = new System.Drawing.Size(173, 46);
             this.lblMovieName5.TabIndex = 10;
             this.lblMovieName5.Text = "Saw";
             this.lblMovieName5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -242,9 +252,9 @@ namespace ScaryMovieForms
             this.lblMovieName4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName4.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName4.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName4.Location = new System.Drawing.Point(534, 182);
+            this.lblMovieName4.Location = new System.Drawing.Point(537, 185);
             this.lblMovieName4.Name = "lblMovieName4";
-            this.lblMovieName4.Size = new System.Drawing.Size(171, 45);
+            this.lblMovieName4.Size = new System.Drawing.Size(172, 46);
             this.lblMovieName4.TabIndex = 9;
             this.lblMovieName4.Text = "Poltergeist";
             this.lblMovieName4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,9 +266,9 @@ namespace ScaryMovieForms
             this.lblMovieName3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName3.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName3.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName3.Location = new System.Drawing.Point(357, 182);
+            this.lblMovieName3.Location = new System.Drawing.Point(359, 185);
             this.lblMovieName3.Name = "lblMovieName3";
-            this.lblMovieName3.Size = new System.Drawing.Size(171, 45);
+            this.lblMovieName3.Size = new System.Drawing.Size(172, 46);
             this.lblMovieName3.TabIndex = 8;
             this.lblMovieName3.Text = "IT";
             this.lblMovieName3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,64 +280,74 @@ namespace ScaryMovieForms
             this.lblMovieName1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName1.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName1.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName1.Location = new System.Drawing.Point(3, 182);
+            this.lblMovieName1.Location = new System.Drawing.Point(3, 185);
             this.lblMovieName1.Name = "lblMovieName1";
-            this.lblMovieName1.Size = new System.Drawing.Size(171, 45);
+            this.lblMovieName1.Size = new System.Drawing.Size(172, 46);
             this.lblMovieName1.TabIndex = 7;
             this.lblMovieName1.Text = "Alien";
             this.lblMovieName1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnMovie5
             // 
+            this.btnMovie5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie5.Image = global::ScaryMovieForms.Properties.Resources.Saw;
-            this.btnMovie5.Location = new System.Drawing.Point(711, 3);
+            this.btnMovie5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMovie5.Location = new System.Drawing.Point(715, 3);
             this.btnMovie5.Name = "btnMovie5";
-            this.btnMovie5.Size = new System.Drawing.Size(172, 176);
+            this.btnMovie5.Size = new System.Drawing.Size(173, 179);
             this.btnMovie5.TabIndex = 5;
             this.btnMovie5.UseVisualStyleBackColor = true;
             this.btnMovie5.Click += new System.EventHandler(this.btnMovie5_Click);
             // 
             // btnMovie4
             // 
+            this.btnMovie4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie4.Image = global::ScaryMovieForms.Properties.Resources.Poltergeist;
-            this.btnMovie4.Location = new System.Drawing.Point(534, 3);
+            this.btnMovie4.Location = new System.Drawing.Point(537, 3);
             this.btnMovie4.Name = "btnMovie4";
-            this.btnMovie4.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie4.Size = new System.Drawing.Size(172, 179);
             this.btnMovie4.TabIndex = 4;
             this.btnMovie4.UseVisualStyleBackColor = true;
             this.btnMovie4.Click += new System.EventHandler(this.btnMovie4_Click);
             // 
             // btnMovie3
             // 
+            this.btnMovie3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie3.Image = global::ScaryMovieForms.Properties.Resources.IT;
-            this.btnMovie3.Location = new System.Drawing.Point(357, 3);
+            this.btnMovie3.Location = new System.Drawing.Point(359, 3);
             this.btnMovie3.Name = "btnMovie3";
-            this.btnMovie3.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie3.Size = new System.Drawing.Size(172, 179);
             this.btnMovie3.TabIndex = 3;
             this.btnMovie3.UseVisualStyleBackColor = true;
             this.btnMovie3.Click += new System.EventHandler(this.btnMovie3_Click);
             // 
             // btnMovie2
             // 
+            this.btnMovie2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMovie2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie2.Image = global::ScaryMovieForms.Properties.Resources.Halloween;
-            this.btnMovie2.Location = new System.Drawing.Point(180, 3);
+            this.btnMovie2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMovie2.Location = new System.Drawing.Point(181, 3);
             this.btnMovie2.Name = "btnMovie2";
-            this.btnMovie2.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie2.Size = new System.Drawing.Size(172, 179);
             this.btnMovie2.TabIndex = 2;
             this.btnMovie2.UseVisualStyleBackColor = true;
             this.btnMovie2.Click += new System.EventHandler(this.btnMovie2_Click);
             // 
             // btnMovie1
             // 
+            this.btnMovie1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMovie1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMovie1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMovie1.Image = global::ScaryMovieForms.Properties.Resources.Alien;
+            this.btnMovie1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMovie1.Location = new System.Drawing.Point(3, 3);
             this.btnMovie1.Name = "btnMovie1";
-            this.btnMovie1.Size = new System.Drawing.Size(171, 176);
+            this.btnMovie1.Size = new System.Drawing.Size(172, 179);
             this.btnMovie1.TabIndex = 1;
             this.btnMovie1.UseVisualStyleBackColor = true;
             this.btnMovie1.Click += new System.EventHandler(this.btnMovie1_Click);
@@ -339,9 +359,9 @@ namespace ScaryMovieForms
             this.lblMovieName2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovieName2.Font = new System.Drawing.Font("Chiller", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovieName2.ForeColor = System.Drawing.Color.White;
-            this.lblMovieName2.Location = new System.Drawing.Point(180, 182);
+            this.lblMovieName2.Location = new System.Drawing.Point(181, 185);
             this.lblMovieName2.Name = "lblMovieName2";
-            this.lblMovieName2.Size = new System.Drawing.Size(171, 45);
+            this.lblMovieName2.Size = new System.Drawing.Size(172, 46);
             this.lblMovieName2.TabIndex = 6;
             this.lblMovieName2.Text = "Halloween";
             this.lblMovieName2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
